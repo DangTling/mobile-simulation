@@ -1,0 +1,11 @@
+/* MobileDeviceFrame.scss */
+.mobile-device-frame {
+  width: var(--mobile-width);
+  height: var(--mobile-height);
+  padding: 8px;
+  background-color: #000;
+  border-radius: 37px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 10% !important;
+}

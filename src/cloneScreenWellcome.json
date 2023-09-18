@@ -1,0 +1,96 @@
+{
+    "detail": {
+        "view": {
+            "column": 1,
+            "data_area": 4,
+            "area": [
+                {
+                    "x": 2.5,
+                    "y": 10,
+                    "width": 45,
+                    "height": 5,
+                    "type": "text",
+                    "fontSize": 14,
+                    "value": "Bỏ qua",
+                    "text_style": {
+                        "color": "#3059DE",
+                        "fontWeight": "500"
+                    },
+                    "style": {
+                        "alignItems": "flex-end"
+                    }
+                },
+                {
+                    "x": 2.5,
+                    "y": 13,
+                    "width": 45,
+                    "height": 15,
+                    "type": "text",
+                    "fontSize": 24,
+                    "value": "Chạm để trải nghiệm vô vàn tiện ích tuyệt vời",
+                    "text_style": {
+                        "color": "#000000",
+                        "fontWeight": "700"
+                    },
+                    "style": {
+                        "alignItems": "center"
+                    }
+                },
+                {
+                    "x": 2.5,
+                    "y": 30,
+                    "width": 45,
+                    "height": 7.5,
+                    "type": "text",
+                    "fontSize": 16,
+                    "value": "Hãy cùng nhau tạo ra bản giao hưởng độc đáo từ những thiết bị thông minh trong ngôi nhà bạn",
+                    "text_style": {
+                        "color": "#A6A7AF",
+                        "fontWeight": "400"
+                    },
+                    "style": {
+                        "alignItems": "center"
+                    }
+                },
+                {
+                    "x": 2.5,
+                    "y": 50,
+                    "width": 45,
+                    "height": 65,
+                    "type": "image",
+                    "value": "1",
+                    "map_data": {
+                        "1": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/iconTheme/illustration.png"
+                        }
+                    },
+                    "image_style": {
+                        "height": "100%",
+                        "width": "100%",
+                        "resizeMode": "stretch"
+                    }
+                },
+                {
+                    "x": 2.5,
+                    "y": 130,
+                    "width": 45,
+                    "height": 10,
+                    "type": "text",
+                    "fontSize": 16,
+                    "value": "Bắt đầu",
+                    "text_style": {
+                        "color": "#FFFFFF",
+                        "fontWeight": "500",
+                        "textAlign": "center"
+                    },
+                    "style": {
+                        "backgroundColor": "#3059DE",
+                        "alignItems": "center",
+                        "borderRadius": 15,
+                        "justifyContent": "center"
+                    }
+                }
+            ]
+        }
+    }
+}

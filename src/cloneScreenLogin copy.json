@@ -1,0 +1,266 @@
+{
+    "detail": {
+        "view": {
+            "column": 1,
+            "data_area": 4,
+            "area": [
+                {
+                    "x": 0,
+                    "y": 15,
+                    "width": 50,
+                    "height": 7.5,
+                    "type": "text",
+                    "fontSize": 24,
+                    "value": "Đăng nhập!",
+                    "text_style": {
+                        "color": "#000000",
+                        "fontWeight": "700",
+                        "textAlign": "center"
+                    },
+                    "style": {
+                        "alignItems": "center"
+                    }
+                },
+                {
+                    "x": 0,
+                    "y": 22,
+                    "width": 50,
+                    "height": 7.5,
+                    "type": "text",
+                    "fontSize": 16,
+                    "value": "Chào mừng bạn trở lại với Rice Tech",
+                    "text_style": {
+                        "color": "#A6A7AF",
+                        "fontWeight": "500"
+                    },
+                    "style": {
+                        "alignItems": "center"
+                    }
+                },
+                {
+                    "x": 3.5,
+                    "y": 35,
+                    "width": 43,
+                    "height": 10,
+                    "type": "view",
+                    "style": {
+                        "backgroundColor": "#F1F2F7",
+                        "borderRadius": 15
+                    }
+                },
+                {
+                    "x": 6.5,
+                    "y": 38.5,
+                    "width": 2,
+                    "height": 3,
+                    "type": "image",
+                    "value": "1",
+                    "map_data": {
+                        "1": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/iconTheme/email.png"
+                        }
+                    },
+                    "image_style": {
+                        "height": "100%",
+                        "width": "100%",
+                        "resizeMode": "stretch"
+                    }
+                },
+                {
+                    "x": 10,
+                    "y": 36,
+                    "width": 30,
+                    "height": 7.5,
+                    "type": "text",
+                    "fontSize": 16,
+                    "value": "Nhập email của bạn",
+                    "text_style": {
+                        "color": "#858891",
+                        "fontWeight": "700"
+                    },
+                    "style": {
+                        "alignItems": "flex-start"
+                    }
+                },
+                {
+                    "x": 39,
+                    "y": 36,
+                    "width": 5,
+                    "height": 7.5,
+                    "type": "text",
+                    "fontSize": 14,
+                    "value": "⨉",
+                    "text_style": {
+                        "color": "#000000",
+                        "fontWeight": "700"
+                    },
+                    "style": {
+                        "alignItems": "flex-end"
+                    }
+                },
+                {
+                    "x": 3.5,
+                    "y": 48,
+                    "width": 43,
+                    "height": 10,
+                    "type": "view",
+                    "style": {
+                        "backgroundColor": "#F1F2F7",
+                        "borderRadius": 15
+                    }
+                },
+                {
+                    "x": 6.5,
+                    "y": 51.5,
+                    "width": 2,
+                    "height": 3,
+                    "type": "image",
+                    "value": "1",
+                    "map_data": {
+                        "1": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/iconTheme/lock.png"
+                        }
+                    },
+                    "image_style": {
+                        "height": "100%",
+                        "width": "100%",
+                        "resizeMode": "stretch"
+                    }
+                },
+                {
+                    "x": 10,
+                    "y": 49,
+                    "width": 30,
+                    "height": 7.5,
+                    "type": "text",
+                    "fontSize": 16,
+                    "value": "Nhập mật khẩu",
+                    "text_style": {
+                        "color": "#858891",
+                        "fontWeight": "700"
+                    },
+                    "style": {
+                        "alignItems": "flex-start"
+                    }
+                },
+                {
+                    "x": 42,
+                    "y": 51.5,
+                    "width": 2,
+                    "height": 3,
+                    "type": "image",
+                    "value":"1",
+                    "map_data": {
+                        "1": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/iconTheme/view.png"
+                        }
+                    },
+                    "image_style": {
+                        "height": "100%",
+                        "width": "100%"
+                    }
+                },
+                {
+                    "x": 6.5,
+                    "y": 59,
+                    "width": 40,
+                    "height": 7.5,
+                    "type": "text",
+                    "fontSize": 14,
+                    "value": "Lưu mật khẩu",
+                    "text_style": {
+                        "color": "#000000",
+                        "fontWeight": "700"
+                    },
+                    "style": {
+                        "alignItems": "flex-start"
+                    }
+                },
+                {
+                    "x": 3.5,
+                    "y": 61,
+                    "width": 2,
+                    "height": 3,
+                    "type": "text",
+                    "fontSize": 8,
+                    "value": "✓",
+                    "text_style": {
+                        "color": "#FFFFFF",
+                        "fontWeight": "700"
+                    },
+                    "style": {
+                        "alignItems": "center",
+                        "backgroundColor": "#3159DD",
+                        "borderRadius": 5
+                    }
+                },
+                {
+                    "x": 7,
+                    "y": 67,
+                    "width": 40,
+                    "height": 7.5,
+                    "type": "text",
+                    "fontSize": 14,
+                    "value": "Quên mật khẩu?",
+                    "text_style": {
+                        "color": "#000000",
+                        "fontWeight": "700"
+                    },
+                    "style": {
+                        "alignItems": "flex-end"
+                    }
+                },
+                {
+                    "x": 3.5,
+                    "y": 77,
+                    "width": 43,
+                    "height": 10,
+                    "type": "text",
+                    "fontSize": 14,
+                    "value": "Đặng nhập",
+                    "text_style": {
+                        "color": "#FFFFFF",
+                        "fontWeight": "700"
+                    },
+                    "style": {
+                        "alignItems": "center",
+                        "backgroundColor": "#3159DD",
+                        "borderRadius": 15
+                    }
+                },
+                {
+                    "x": 0,
+                    "y": 88,
+                    "width": 25,
+                    "height": 7.5,
+                    "type": "text",
+                    "fontSize": 16,
+                    "value": "Chưa có tài khoản?",
+                    "text_style": {
+                        "color": "#000000",
+                        "fontWeight": "700"
+                    },
+                    "style": {
+                        "alignItems": "flex-end"
+                    }
+                },
+                {
+                    "x": 25.5,
+                    "y": 88,
+                    "width": 25,
+                    "height": 7.5,
+                    "type": "text",
+                    "fontSize": 16,
+                    "value": "Đăng ký ngay",
+                    "text_style": {
+                        "color": "#3159DD",
+                        "fontWeight": "700"
+                    },
+                    "style": {
+                        "alignItems": "flex-start"
+                    }
+                }
+            ]
+        }
+    }
+}

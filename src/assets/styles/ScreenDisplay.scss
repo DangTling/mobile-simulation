@@ -1,0 +1,91 @@
+/* ScreenDisplay.scss */
+.screen-display {
+  width: var(--screen-width);
+  height: var(--screen-height);
+  border-radius: 30px;
+  background-color: #ffffff;
+  overflow: hidden;
+  position: relative;
+  // background-image: url("../images/backGroundIP.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+
+  /* TopSection.scss */
+  .top-section {
+    width: 100%;
+    height: 6%;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 2px;
+    font-size: 2px;
+
+    .camera {
+      width: 25%;
+      height: 4%;
+      background-color: #000000;
+      position: absolute;
+      border-radius: 20px;
+      top: 3%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2222222;
+    }
+    .time {
+      color: black;
+      width: 37.5%;
+      text-align: center;
+      font-size: 12px;
+      font-weight: bold;
+      z-index: 2222222;
+    }
+    .status-bar {
+      width: 37.5%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .signal-icon,
+    .wifi-icon {
+      font-size: 12px;
+      margin-right: 8px;
+      z-index: 2222222;
+    }
+    .battery-icon {
+      font-size: 16px;
+      z-index: 2222222;
+    }
+  }
+  .bottom-section {
+    width: 44%;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 222222222;
+    position: absolute;
+    bottom: 0%;
+    height: 1%;
+    border-radius: 20px;
+
+    .navigation-button {
+      background-color: #414346;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .navigation-button:hover {
+      background-color: #4b4b4b;
+    }
+  }
+}

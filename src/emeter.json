@@ -1,0 +1,2804 @@
+{
+  "shortcut": {
+    "view": {
+      "column": 1,
+      "data_area": 4,
+      "area": []
+    }
+  },
+  "detail": {
+    "view": {
+      "column": 1,
+      "data_area": 4,
+      "area": [
+        {
+          "x": 9.5,
+          "y": -4,
+          "width": 31,
+          "height": 31,
+          "type": "text",
+          "value": "Công tơ điện 1 pha",
+          "fontSize": 16,
+          "text_style": {
+            "color": "#1E2661",
+            "fontWeight": "600"
+          }
+        },
+        {
+          "x": 1.5,
+          "y": 60,
+          "width": 47,
+          "height": 51,
+          "type": "image",
+          "value": ["6"],
+          "image_style": {
+            "width": "100%",
+            "height": "100%"
+          },
+          "map_data": {
+            "default": {
+              "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/ElectricMeter/result_screen.png"
+            }
+          }
+        },
+        {
+          "isConditionComponent": true,
+          "value": ["selectChart"],
+          "map_item": [
+            {
+              "value": "1",
+              "item": {
+                "x": 3,
+                "y": 45,
+                "width": 44,
+                "height": 10,
+                "type": "image",
+                "image_style": {
+                  "width": "100%",
+                  "height": "100%"
+                },
+                "value": ["2"],
+                "map_data": {
+                  "default": {
+                    "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/ElectricMeter/this_month.png"
+                  }
+                }
+              }
+            },
+            {
+              "value": "2",
+              "item": {
+                "x": 3,
+                "y": 45,
+                "width": 44,
+                "height": 10,
+                "type": "image",
+                "image_style": {
+                  "width": "100%",
+                  "height": "100%"
+                },
+                "value": ["3"],
+                "map_data": {
+                  "default": {
+                    "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/ElectricMeter/last_month.png"
+                  }
+                }
+              }
+            },
+            {
+              "value": "3",
+              "item": {
+                "x": 3,
+                "y": 45,
+                "width": 44,
+                "height": 10,
+                "type": "image",
+                "image_style": {
+                  "width": "100%",
+                  "height": "100%"
+                },
+                "value": ["4"],
+                "map_data": {
+                  "default": {
+                    "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/ElectricMeter/last_day.png"
+                  }
+                }
+              }
+            },
+            {
+              "isDefault": true,
+              "item": {
+                "x": 3,
+                "y": 45,
+                "width": 44,
+                "height": 10,
+                "type": "image",
+                "image_style": {
+                  "width": "100%",
+                  "height": "100%"
+                },
+                "value": ["2"],
+                "map_data": {
+                  "default": {
+                    "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/ElectricMeter/this_month.png"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "x": 19,
+          "y": 46,
+          "width": 13.5,
+          "height": 9,
+          "type": "image",
+          "image_style": {
+            "width": "100%",
+            "height": "100%"
+          },
+          "value": ["selectChart"],
+          "map_data": {
+            "1": {},
+            "default": {}
+          },
+          "function": {
+            "name": "updateState"
+          }
+        },
+        {
+          "x": 3,
+          "y": 46,
+          "width": 13.5,
+          "height": 9,
+          "type": "image",
+          "value": ["selectChart"],
+          "image_style": {
+            "width": "100%",
+            "height": "100%"
+          },
+          "map_data": {
+            "2": {},
+            "default": {}
+          },
+          "function": {
+            "name": "updateState"
+          }
+        },
+        {
+          "x": 34,
+          "y": 46.2,
+          "width": 13.5,
+          "height": 9,
+          "type": "image",
+          "value": ["selectChart"],
+          "data_type": "number",
+          "image_style": {
+            "width": "100%",
+            "height": "100%"
+          },
+          "map_data": {
+            "3": {},
+            "default": {}
+          },
+          "function": {
+            "name": "updateState"
+          }
+        },
+        {
+          "x": 4,
+          "y": 112,
+          "width": 40,
+          "height": 7,
+          "type": "text",
+          "value": "*Dữ liệu mang tính tham khảo",
+          "fontSize": 14,
+          "text_style": {
+            "color": "#878DBA",
+            "fontWeight": "400",
+            "textAlign": "center"
+          }
+        },
+        {
+          "isConditionComponent": true,
+          "value": ["selectChart"],
+          "map_item": [
+            {
+              "value": "1",
+              "item": {
+                "x": 13,
+                "y": 71,
+                "width": 24,
+                "height": 7,
+                "type": "view",
+                "cp": "calc_text",
+                "param": {
+                  "type_calc": "rounding_numbers",
+                  "calc_text_style": {
+                    "color": "#85E1FF",
+                    "fontSize": 28,
+                    "fontWeight": "700",
+                    "textAlign": "center"
+                  },
+                  "unit": " kWh"
+                },
+                "values": [
+                  {
+                    "state": "value",
+                    "map_to_props": ["power_this_mon"]
+                  }
+                ]
+              }
+            },
+            {
+              "value": "2",
+              "item": {
+                "x": 13,
+                "y": 71,
+                "width": 24,
+                "height": 7,
+                "type": "view",
+                "cp": "calc_text",
+                "param": {
+                  "type_calc": "rounding_numbers",
+                  "calc_text_style": {
+                    "color": "#85E1FF",
+                    "fontSize": 28,
+                    "fontWeight": "700",
+                    "textAlign": "center"
+                  },
+                  "unit": " kWh"
+                },
+                "values": [
+                  {
+                    "state": "value",
+                    "map_to_props": ["power_prev_mon"]
+                  }
+                ]
+              }
+            },
+            {
+              "value": "3",
+              "item": {
+                "x": 13,
+                "y": 71,
+                "width": 24,
+                "height": 7,
+                "type": "view",
+                "cp": "calc_text",
+                "param": {
+                  "type_calc": "rounding_numbers",
+                  "calc_text_style": {
+                    "color": "#85E1FF",
+                    "fontSize": 28,
+                    "fontWeight": "700",
+                    "textAlign": "center"
+                  },
+                  "unit": " kWh"
+                },
+                "values": [
+                  {
+                    "state": "value",
+                    "map_to_props": ["options", "power_day", "0", "v"]
+                  }
+                ]
+              }
+            },
+            {
+              "isDefault": true,
+              "item": {
+                "x": 13,
+                "y": 71,
+                "width": 24,
+                "height": 7,
+                "type": "view",
+                "cp": "calc_text",
+                "param": {
+                  "type_calc": "rounding_numbers",
+                  "calc_text_style": {
+                    "color": "#85E1FF",
+                    "fontSize": 28,
+                    "fontWeight": "700",
+                    "textAlign": "center"
+                  },
+                  "unit": " kWh"
+                },
+                "values": [
+                  {
+                    "state": "value",
+                    "map_to_props": ["power_this_mon"]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "isConditionComponent": true,
+          "value": ["selectChart"],
+          "map_item": [
+            {
+              "value": "1",
+              "item": {
+                "x": 13,
+                "y": 79,
+                "width": 24,
+                "height": 7,
+                "type": "view",
+                "cp": "calc_text",
+                "param": {
+                  "type_calc": "calc_price",
+                  "calc_text_style": {
+                    "color": "#85E1FF",
+                    "fontSize": 22,
+                    "fontWeight": "700",
+                    "textAlign": "center"
+                  },
+                  "price_info": [
+                    {
+                      "from": 0,
+                      "to": 50,
+                      "price": 1678
+                    },
+                    {
+                      "from": 51,
+                      "to": 100,
+                      "price": 1734
+                    },
+                    {
+                      "from": 101,
+                      "to": 200,
+                      "price": 2014
+                    },
+                    {
+                      "from": 201,
+                      "to": 300,
+                      "price": 2536
+                    },
+                    {
+                      "from": 301,
+                      "to": 400,
+                      "price": 2834
+                    },
+                    {
+                      "from": 401,
+                      "to": 999999999999,
+                      "price": 2927
+                    }
+                  ],
+                  "unit": " VND"
+                },
+                "values": [
+                  {
+                    "state": "value",
+                    "map_to_props": ["power_this_mon"]
+                  }
+                ]
+              }
+            },
+            {
+              "value": "2",
+              "item": {
+                "x": 13,
+                "y": 79,
+                "width": 24,
+                "height": 7,
+                "type": "view",
+                "cp": "calc_text",
+                "param": {
+                  "type_calc": "calc_price",
+                  "calc_text_style": {
+                    "color": "#85E1FF",
+                    "fontSize": 22,
+                    "fontWeight": "700",
+                    "textAlign": "center"
+                  },
+                  "price_info": [
+                    {
+                      "from": 0,
+                      "to": 50,
+                      "price": 1678
+                    },
+                    {
+                      "from": 51,
+                      "to": 100,
+                      "price": 1734
+                    },
+                    {
+                      "from": 101,
+                      "to": 200,
+                      "price": 2014
+                    },
+                    {
+                      "from": 201,
+                      "to": 300,
+                      "price": 2536
+                    },
+                    {
+                      "from": 301,
+                      "to": 400,
+                      "price": 2834
+                    },
+                    {
+                      "from": 401,
+                      "to": 999999999999,
+                      "price": 2927
+                    }
+                  ],
+                  "unit": " VND"
+                },
+                "values": [
+                  {
+                    "state": "value",
+                    "map_to_props": ["power_prev_mon"]
+                  }
+                ]
+              }
+            },
+            {
+              "value": "3",
+              "item": {
+                "x": 13,
+                "y": 79,
+                "width": 24,
+                "height": 7,
+                "type": "view",
+                "cp": "calc_text",
+                "param": {
+                  "type_calc": "calc_price",
+                  "calc_text_style": {
+                    "color": "#85E1FF",
+                    "fontSize": 22,
+                    "fontWeight": "700",
+                    "textAlign": "center"
+                  },
+                  "price_info": [
+                    {
+                      "from": 0,
+                      "to": 50,
+                      "price": 1678
+                    },
+                    {
+                      "from": 51,
+                      "to": 100,
+                      "price": 1734
+                    },
+                    {
+                      "from": 101,
+                      "to": 200,
+                      "price": 2014
+                    },
+                    {
+                      "from": 201,
+                      "to": 300,
+                      "price": 2536
+                    },
+                    {
+                      "from": 301,
+                      "to": 400,
+                      "price": 2834
+                    },
+                    {
+                      "from": 401,
+                      "to": 999999999999,
+                      "price": 2927
+                    }
+                  ],
+                  "unit": " VND"
+                },
+                "values": [
+                  {
+                    "state": "value",
+                    "map_to_props": ["options", "power_day", "0", "v"]
+                  }
+                ]
+              }
+            },
+            {
+              "isDefault": true,
+              "item": {
+                "x": 13,
+                "y": 79,
+                "width": 24,
+                "height": 7,
+                "type": "view",
+                "cp": "calc_text",
+                "param": {
+                  "type_calc": "calc_price",
+                  "calc_text_style": {
+                    "color": "#85E1FF",
+                    "fontSize": 22,
+                    "fontWeight": "700",
+                    "textAlign": "center"
+                  },
+                  "price_info": [
+                    {
+                      "from": 0,
+                      "to": 50,
+                      "price": 1678
+                    },
+                    {
+                      "from": 51,
+                      "to": 100,
+                      "price": 1734
+                    },
+                    {
+                      "from": 101,
+                      "to": 200,
+                      "price": 2014
+                    },
+                    {
+                      "from": 201,
+                      "to": 300,
+                      "price": 2536
+                    },
+                    {
+                      "from": 301,
+                      "to": 400,
+                      "price": 2834
+                    },
+                    {
+                      "from": 401,
+                      "to": 999999999999,
+                      "price": 2927
+                    }
+                  ],
+                  "unit": " VND"
+                },
+                "values": [
+                  {
+                    "state": "value",
+                    "map_to_props": ["power_this_mon"]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "x": 2,
+          "y": 17,
+          "width": 14,
+          "height": 24,
+          "type": "image",
+          "value": ["1"],
+          "image_style": {
+            "width": "100%",
+            "height": "100%",
+            "resizeMode": "stretch"
+          },
+          "map_data": {
+            "default": {
+              "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/ElectricMeter/bgInfo.png"
+            }
+          }
+        },
+        {
+          "x": 6,
+          "y": 20,
+          "width": 6,
+          "height": 6,
+          "type": "image",
+          "value": ["1"],
+          "image_style": {
+            "width": "100%",
+            "height": "100%"
+          },
+          "map_data": {
+            "default": {
+              "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/ElectricMeter/voltageIcon.png"
+            }
+          }
+        },
+        {
+          "x": 2,
+          "y": 22,
+          "width": 14,
+          "height": 14,
+          "type": "text",
+          "value": "Điện áp",
+          "fontSize": 14,
+          "text_style": {
+            "color": "#FFFFFF",
+            "fontWeight": "400"
+          }
+        },
+        {
+          "x": 3,
+          "y": 32,
+          "width": 12,
+          "height": 7,
+          "type": "view",
+          "values": [
+            {
+              "state": "value",
+              "map_to_props": ["voltage"]
+            }
+          ],
+          "cp": "calc_text",
+          "param": {
+            "unit": "V",
+            "type_calc": "rounding_numbers",
+            "calc_text_style": {
+              "fontSize": 26,
+              "fontWeight": "500",
+              "color": "#FFFFFF",
+              "textAlign": "center"
+            }
+          }
+        },
+        {
+          "x": 18,
+          "y": 17,
+          "width": 14,
+          "height": 24,
+          "type": "image",
+          "value": ["1"],
+          "image_style": {
+            "width": "100%",
+            "height": "100%",
+            "resizeMode": "stretch"
+          },
+          "map_data": {
+            "default": {
+              "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/ElectricMeter/bgInfo.png"
+            }
+          }
+        },
+        {
+          "x": 22,
+          "y": 20,
+          "width": 6,
+          "height": 6,
+          "type": "image",
+          "value": ["1"],
+          "image_style": {
+            "width": "100%",
+            "height": "100%"
+          },
+          "map_data": {
+            "default": {
+              "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/ElectricMeter/ampeIcon.png"
+            }
+          }
+        },
+        {
+          "x": 18,
+          "y": 22,
+          "width": 14,
+          "height": 14,
+          "type": "text",
+          "value": "Dòng điện",
+          "fontSize": 14,
+          "text_style": {
+            "color": "#FFFFFF",
+            "textAlign": "center",
+            "fontWeight": "400"
+          }
+        },
+        {
+          "x": 19,
+          "y": 32,
+          "width": 12,
+          "height": 7,
+          "type": "view",
+          "values": [
+            {
+              "state": "value",
+              "map_to_props": ["current"]
+            }
+          ],
+          "cp": "calc_text",
+          "param": {
+            "unit": "A",
+            "type_calc": "rounding_numbers",
+            "calc_text_style": {
+              "fontSize": 26,
+              "fontWeight": "500",
+              "color": "#FFFFFF",
+              "textAlign": "center"
+            }
+          }
+        },
+        {
+          "x": 34,
+          "y": 17,
+          "width": 14,
+          "height": 24,
+          "type": "image",
+          "value": ["1"],
+          "image_style": {
+            "width": "100%",
+            "height": "100%",
+            "resizeMode": "stretch"
+          },
+          "map_data": {
+            "default": {
+              "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/ElectricMeter/bgInfo.png"
+            }
+          }
+        },
+        {
+          "x": 38,
+          "y": 20,
+          "width": 6,
+          "height": 6,
+          "type": "image",
+          "value": ["1"],
+          "image_style": {
+            "width": "100%",
+            "height": "100%"
+          },
+          "map_data": {
+            "default": {
+              "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/ElectricMeter/watIcon.png"
+            }
+          }
+        },
+        {
+          "x": 34,
+          "y": 22,
+          "width": 14,
+          "height": 14,
+          "type": "text",
+          "value": "Công suất",
+          "fontSize": 14,
+          "text_style": {
+            "color": "#FFFFFF",
+            "textAlign": "center",
+            "fontWeight": "400"
+          }
+        },
+        {
+          "x": 35,
+          "y": 32,
+          "width": 12,
+          "height": 7,
+          "type": "view",
+          "values": [
+            {
+              "state": "value",
+              "map_to_props": ["current_power"]
+            }
+          ],
+          "cp": "calc_text",
+          "param": {
+            "unit": "W",
+            "type_calc": "rounding_numbers",
+            "calc_text_style": {
+              "fontSize": 26,
+              "fontWeight": "500",
+              "color": "#FFFFFF",
+              "textAlign": "center"
+            }
+          }
+        },
+        {
+          "x": 17.5,
+          "y": 125,
+          "width": 15,
+          "height": 15,
+          "type": "image",
+          "value": ["on_off"],
+          "image_style": {
+            "width": "100%",
+            "height": "100%"
+          },
+          "map_data": {
+            "true": {
+              "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/ElectricMeter/ON-OFF.png"
+            },
+            "false": {
+              "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/ElectricMeter/default_button.png"
+            },
+            "default": {
+              "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/ElectricMeter/default_button.png"
+            }
+          },
+          "data_type": "boolean",
+          "function": {
+            "name": "updateState",
+            "confirm_ecxecute": {
+              "active": true,
+              "message": "Xác nhận thực hiện thao tác này!"
+            }
+          }
+        },
+        {
+          "x": 2.5,
+          "y": 128.5,
+          "width": 15,
+          "height": 8,
+          "type": "text",
+          "value": "Đổi biểu giá",
+          "fontSize": 16,
+          "text_style": {
+            "color": "#3C51F3",
+            "textAlign": "center",
+            "fontWeight": "600"
+          },
+          "style": {
+            "backgroundColor": "#E7EAFE",
+            "borderRadius": 8
+          }
+        },
+        {
+          "x": 32.5,
+          "y": 128.5,
+          "width": 15,
+          "height": 8,
+          "type": "text",
+          "value": "Xem chi tiết",
+          "fontSize": 16,
+          "text_style": {
+            "color": "#3C51F3",
+            "textAlign": "center",
+            "marginTop": 10,
+            "fontWeight": "600"
+          },
+          "style": {
+            "backgroundColor": "#E7EAFE",
+            "borderRadius": 8
+          },
+          "function": {
+            "name": "showScreen"
+          },
+          "screen": [
+            {
+              "x": 2.5,
+              "y": 2,
+              "width": 45,
+              "height": 5,
+              "type": "text",
+              "value": "Chi tiết tiêu thụ",
+              "fontSize": 16,
+              "text_style": {
+                "color": "#1E2661",
+                "fontWeight": "500"
+              },
+              "style": {
+                "alignItems": "center"
+              }
+            },
+            {
+              "x": 2.5,
+              "y": 9,
+              "width": 43,
+              "height": 45,
+              "type": "view",
+              "cp": "chart",
+              "values": [
+                {
+                  "state": "value",
+                  "map_to_props": ["options", "power_day"]
+                }
+              ],
+              "param": {
+                "map_data": {
+                  "value": ["v"],
+                  "time": ["t"]
+                },
+                "options": [
+                  {
+                    "name": "15 ngày gần nhất",
+                    "day": 15
+                  },
+                  {
+                    "name": "30 ngày gần nhất",
+                    "day": 30
+                  }
+                ],
+                "bar_color": "rgb(22.000000588595867, 93.00000205636024, 255)"
+              }
+            },
+            {
+              "isConditionComponent": true,
+              "values": [
+                {
+                  "state": "value",
+                  "map_to_props": ["power_this_mon"]
+                }
+              ],
+              "map_item": [
+                {
+                  "from": 0,
+                  "to": 430,
+                  "item": {
+                    "x": 0,
+                    "y": 58,
+                    "width": 50,
+                    "height": 18,
+                    "type": "scroll_view",
+                    "style": {
+                      "alignItems": "center"
+                    },
+                    "areas": [
+                      {
+                        "width": 50,
+                        "height": 18,
+                        "area": [
+                          {
+                            "x": 2,
+                            "y": 0,
+                            "width": 46,
+                            "height": 18,
+                            "type": "view",
+                            "style": {
+                              "backgroundColor": "#4068D9",
+                              "borderRadius": 16
+                            }
+                          },
+                          {
+                            "x": 4,
+                            "y": 2,
+                            "width": 30,
+                            "height": 5,
+                            "type": "text",
+                            "value": "Tháng hiện tại (tạm tính)",
+                            "fontSize": 14,
+                            "text_style": {
+                              "color": "#FFFFFF",
+                              "fontWeight": "400"
+                            },
+                            "style": {
+                              "alignItems": "flex-start"
+                            }
+                          },
+                          {
+                            "x": 2.5,
+                            "y": 10,
+                            "width": 3,
+                            "height": 3,
+                            "type": "image",
+                            "value": ["10"],
+                            "image_style": {
+                              "width": "100%",
+                              "height": "100%"
+                            },
+                            "map_data": {
+                              "default": {
+                                "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/ElectricMeter/flash.png"
+                              }
+                            }
+                          },
+                          {
+                            "x": 5.5,
+                            "y": 8,
+                            "width": 17,
+                            "height": 8,
+                            "type": "view",
+                            "cp": "calc_text",
+                            "param": {
+                              "type_calc": "rounding_numbers",
+                              "calc_text_style": {
+                                "color": "#FFFFFF",
+                                "fontSize": 24,
+                                "marginTop": 5,
+                                "fontWeight": "500"
+                              },
+                              "unit": " kWh"
+                            },
+                            "values": [
+                              {
+                                "state": "value",
+                                "map_to_props": ["power_this_mon"]
+                              }
+                            ]
+                          },
+                          {
+                            "x": 22.5,
+                            "y": 9,
+                            "width": 0.1,
+                            "height": 5,
+                            "type": "view",
+                            "style": {
+                              "backgroundColor": "#8EA6EA"
+                            }
+                          },
+                          {
+                            "x": 23,
+                            "y": 9.5,
+                            "width": 4,
+                            "height": 4,
+                            "type": "image",
+                            "value": ["0"],
+                            "image_style": {
+                              "width": "100%",
+                              "height": "100%"
+                            },
+                            "map_data": {
+                              "default": {
+                                "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/ElectricMeter/money.png"
+                              }
+                            }
+                          },
+                          {
+                            "x": 27,
+                            "y": 8,
+                            "width": 20,
+                            "height": 8,
+                            "type": "view",
+                            "cp": "calc_text",
+                            "param": {
+                              "type_calc": "calc_price",
+                              "calc_text_style": {
+                                "color": "#FFFFFF",
+                                "fontSize": 24,
+                                "marginTop": 5,
+                                "fontWeight": "600"
+                              },
+                              "price_info": [
+                                {
+                                  "from": 0,
+                                  "to": 50,
+                                  "price": 1678
+                                },
+                                {
+                                  "from": 51,
+                                  "to": 100,
+                                  "price": 1734
+                                },
+                                {
+                                  "from": 101,
+                                  "to": 200,
+                                  "price": 2014
+                                },
+                                {
+                                  "from": 201,
+                                  "to": 300,
+                                  "price": 2536
+                                },
+                                {
+                                  "from": 301,
+                                  "to": 400,
+                                  "price": 2834
+                                },
+                                {
+                                  "from": 401,
+                                  "to": 999999999999,
+                                  "price": 2927
+                                }
+                              ],
+                              "unit": " VND"
+                            },
+                            "values": [
+                              {
+                                "state": "value",
+                                "map_to_props": ["power_this_mon"]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "from": 431,
+                  "to": 99999999999999,
+                  "item": {
+                    "x": 0,
+                    "y": 58,
+                    "width": 50,
+                    "height": 18,
+                    "type": "scroll_view",
+                    "style": {
+                      "alignItems": "center"
+                    },
+                    "areas": [
+                      {
+                        "width": 50,
+                        "height": 18,
+                        "area": [
+                          {
+                            "x": 2,
+                            "y": 0,
+                            "width": 46,
+                            "height": 18,
+                            "type": "view",
+                            "style": {
+                              "backgroundColor": "#4068D9",
+                              "borderRadius": 16
+                            }
+                          },
+                          {
+                            "x": 4,
+                            "y": 2,
+                            "width": 30,
+                            "height": 5,
+                            "type": "text",
+                            "value": "Tháng hiện tại (tạm tính)",
+                            "fontSize": 14,
+                            "text_style": {
+                              "color": "#FFFFFF",
+                              "fontWeight": "400"
+                            },
+                            "style": {
+                              "alignItems": "flex-start"
+                            }
+                          },
+                          {
+                            "x": 2.5,
+                            "y": 10,
+                            "width": 3,
+                            "height": 3,
+                            "type": "image",
+                            "value": ["10"],
+                            "image_style": {
+                              "width": "100%",
+                              "height": "100%"
+                            },
+                            "map_data": {
+                              "default": {
+                                "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/ElectricMeter/flash.png"
+                              }
+                            }
+                          },
+                          {
+                            "x": 5.5,
+                            "y": 8,
+                            "width": 17,
+                            "height": 8,
+                            "type": "view",
+                            "cp": "calc_text",
+                            "param": {
+                              "type_calc": "rounding_numbers",
+                              "calc_text_style": {
+                                "color": "#FFFFFF",
+                                "fontSize": 22,
+                                "marginTop": 5,
+                                "fontWeight": "500"
+                              },
+                              "unit": " kWh"
+                            },
+                            "values": [
+                              {
+                                "state": "value",
+                                "map_to_props": ["power_this_mon"]
+                              }
+                            ]
+                          },
+                          {
+                            "x": 22.5,
+                            "y": 9,
+                            "width": 0.1,
+                            "height": 5,
+                            "type": "view",
+                            "style": {
+                              "backgroundColor": "#8EA6EA"
+                            }
+                          },
+                          {
+                            "x": 23,
+                            "y": 9.5,
+                            "width": 4,
+                            "height": 4,
+                            "type": "image",
+                            "value": ["0"],
+                            "image_style": {
+                              "width": "100%",
+                              "height": "100%"
+                            },
+                            "map_data": {
+                              "default": {
+                                "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/ElectricMeter/money.png"
+                              }
+                            }
+                          },
+                          {
+                            "x": 27,
+                            "y": 8,
+                            "width": 20,
+                            "height": 8,
+                            "type": "view",
+                            "cp": "calc_text",
+                            "param": {
+                              "type_calc": "calc_price",
+                              "calc_text_style": {
+                                "color": "#FFFFFF",
+                                "fontSize": 22,
+                                "marginTop": 5,
+                                "fontWeight": "600"
+                              },
+                              "price_info": [
+                                {
+                                  "from": 0,
+                                  "to": 50,
+                                  "price": 1678
+                                },
+                                {
+                                  "from": 51,
+                                  "to": 100,
+                                  "price": 1734
+                                },
+                                {
+                                  "from": 101,
+                                  "to": 200,
+                                  "price": 2014
+                                },
+                                {
+                                  "from": 201,
+                                  "to": 300,
+                                  "price": 2536
+                                },
+                                {
+                                  "from": 301,
+                                  "to": 400,
+                                  "price": 2834
+                                },
+                                {
+                                  "from": 401,
+                                  "to": 999999999999,
+                                  "price": 2927
+                                }
+                              ],
+                              "unit": " VND"
+                            },
+                            "values": [
+                              {
+                                "state": "value",
+                                "map_to_props": ["power_this_mon"]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "x": 2.5,
+              "y": 78,
+              "width": 30,
+              "height": 5,
+              "type": "text",
+              "value": "Lịch sử tiêu thụ",
+              "fontSize": 16,
+              "text_style": {
+                "color": "#1E2661",
+                "fontWeight": "600"
+              },
+              "style": {
+                "alignItems": "flex-start"
+              }
+            },
+            {
+              "x": 0,
+              "y": 85,
+              "width": 50,
+              "height": 40,
+              "type": "flat_list",
+              "horizontal": false,
+              "data": {
+                "value": ["options", "power_day"]
+              },
+              "style": {
+                "borderRadius": 16
+              },
+              "item": {
+                "view": {
+                  "width": 45,
+                  "height": 11,
+                  "area": [
+                    {
+                      "x": 0,
+                      "y": 0,
+                      "width": 45,
+                      "height": 10,
+                      "type": "view",
+                      "style": {
+                        "borderRadius": 12,
+                        "backgroundColor": "#FFFFFF",
+                        "borderWidth": 1,
+                        "borderColor": "rgba(136, 136, 136, 0.2)"
+                      }
+                    },
+                    {
+                      "x": 1.5,
+                      "y": 1.5,
+                      "width": 23,
+                      "height": 7,
+                      "type": "text",
+                      "value": ["data", "t"],
+                      "fontSize": 14,
+                      "text_style": {
+                        "color": "#1E2661",
+                        "fontWeight": "600"
+                      },
+                      "style": {
+                        "alignItems": "flex-start"
+                      }
+                    },
+                    {
+                      "x": 23.5,
+                      "y": 1.5,
+                      "width": 15,
+                      "height": 7,
+                      "type": "text",
+                      "value": ["data", "v"],
+                      "fontSize": 14,
+                      "text_style": {
+                        "color": "#4068D9",
+                        "fontWeight": "600"
+                      },
+                      "style": {
+                        "alignItems": "flex-end"
+                      }
+                    },
+                    {
+                      "x": 39,
+                      "y": 1.5,
+                      "width": 10,
+                      "height": 7,
+                      "type": "text",
+                      "value": "kWh",
+                      "fontSize": 14,
+                      "text_style": {
+                        "color": "#4068D9",
+                        "fontWeight": "600"
+                      },
+                      "style": {
+                        "alignItems": "flex-start"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "settingConfig": {
+    "externalData": {
+      "lang": {
+        "en": {
+          "buttonSetting": "Setting Button",
+          "timer": "Timer",
+          "selectWifi": "Update wifi",
+          "meterReadingDate": "Closing date",
+          "adaptiveTemperature": "Adaptive temperature",
+          "relaySetting": "Setting Relay",
+          "warning": "Warning",
+          "updateFirmware": "Firmware update",
+          "maintainStatus": "Maintain status",
+          "alwaysOn": "Always on",
+          "alwaysOff": "Always off",
+          "startRelayStatus": "Relay starting status",
+          "enableToggling": "Enable toggling",
+          "onlyOff": "Only off",
+          "timerhcl": "Adaptive temperature",
+          "tds": "Total dissolved Solids",
+          "water_in": "Water supply status",
+          "filter": "Filter"
+        },
+        "vi": {
+          "buttonSetting": "Cài đặt nút nhấn",
+          "timer": "Hẹn giờ",
+          "meterReadingDate": "Ngày chốt số điện",
+          "adaptiveTemperature": "Nhiệt độ thích ứng",
+          "relaySetting": "Cài đặt relay",
+          "warning": "Cảnh báo",
+          "updateFirmware": "Cập nhật firmware",
+          "buttonSetting1": "Cài đặt nút nhấn 1",
+          "maintainStatus": "Giữ nguyên trạng thái",
+          "alwaysOn": "Luôn bật",
+          "alwaysOff": "Luôn tắt",
+          "startRelayStatus": "Trạng thái relay khởi động",
+          "enableToggling": "Cho phép bật tắt",
+          "onlyOff": "Chỉ tắt",
+          "timerhcl": "Nhiệt độ thích ứng",
+          "tds": "Chỉ số tds",
+          "water_in": "Trạng thái nước cấp",
+          "filter": "Lõi lọc"
+        }
+      },
+      "theme": {}
+    },
+    "attributes": [
+      {
+        "name": "button_disable",
+        "title": "{{lang.buttonSetting}}",
+        "schema": {
+          "descriptionSetValue": {},
+          "actions": [
+            {
+              "action": "received",
+              "schema": {
+                "type": "number",
+                "enum": [0, 1]
+              }
+            },
+            {
+              "action": "update_setting",
+              "schema": {
+                "type": "number",
+                "enum": [0, 1]
+              }
+            }
+          ]
+        },
+        "display": {
+          "type": "View",
+          "children": [
+            {
+              "type": "View",
+              "children": [
+                {
+                  "type": "View",
+                  "children": [
+                    {
+                      "type": "TouchableOpacity",
+                      "children": [
+                        {
+                          "type": "Image",
+                          "props": {
+                            "source": "{{theme.icons.back}}",
+                            "style": {
+                              "width": 16,
+                              "height": 16
+                            }
+                          }
+                        }
+                      ],
+                      "props": {
+                        "style": {
+                          "position": "absolute",
+                          "left": -16,
+                          "padding": 16
+                        },
+                        "onPress": [
+                          {
+                            "functionName": "goBack",
+                            "args": []
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Text",
+                      "children": "{{lang.buttonSetting}}",
+                      "props": {
+                        "style": {
+                          "color": "{{theme.colors.textColor}}",
+                          "fontFamily": "{{theme.fonts.fontBold}}",
+                          "width": "100%",
+                          "flex": 1,
+                          "fontSize": 20,
+                          "lineHeight": 28,
+                          "maxWidth": "70%",
+                          "textAlign": "center"
+                        },
+                        "ellipsizeMode": "tail",
+                        "numberOfLines": 1
+                      }
+                    }
+                  ],
+                  "props": {
+                    "style": {
+                      "width": "100%",
+                      "flexDirection": "row",
+                      "alignItems": "center",
+                      "justifyContent": "center"
+                    }
+                  }
+                }
+              ],
+              "props": {
+                "style": {
+                  "width": "100%",
+                  "paddingBottom": 16,
+                  "paddingHorizontal": 24,
+                  "paddingTop": 50
+                }
+              }
+            },
+            {
+              "type": "View",
+              "children": [
+                {
+                  "type": "View",
+                  "children": [
+                    {
+                      "type": "Text",
+                      "children": "{{lang.startRelayStatus}} :",
+                      "props": {
+                        "ellipsizeMode": "tail",
+                        "numberOfLines": 1,
+                        "style": {
+                          "fontSize": 16,
+                          "lineHeight": 24,
+                          "marginBottom": 16,
+                          "marginTop": 16,
+                          "color": "{{theme.colors.textColor}}",
+                          "fontFamily": "{{theme.fonts.fontMedium}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "Select",
+                      "children": [],
+                      "props": {
+                        "data": {
+                          "value": "{{this.state.button_disable}}",
+                          "items": [
+                            {
+                              "label": "{{lang.enableToggling}}",
+                              "value": 0
+                            },
+                            {
+                              "label": "{{lang.onlyOff}}",
+                              "value": 1
+                            }
+                          ]
+                        },
+                        "onChangeValue": [
+                          {
+                            "functionName": "onChangeState",
+                            "args": [["button_disable"]]
+                          },
+                          {
+                            "functionName": "onSaveSetting",
+                            "args": [["button_disable"]]
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "props": {
+                    "style": {
+                      "root": {
+                        "width": "100%",
+                        "flex": 1,
+                        "paddingHorizontal": 24,
+                        "paddingTop": 20
+                      }
+                    }
+                  }
+                }
+              ],
+              "props": {
+                "style": {
+                  "width": "100%",
+                  "flex": 1,
+                  "paddingHorizontal": 24,
+                  "paddingTop": 20,
+                  "backgroundColor": "{{theme.colors.appColorThird}}"
+                }
+              }
+            }
+          ],
+          "props": {
+            "style": {
+              "width": "100%",
+              "flex": 1
+            }
+          }
+        }
+      },
+      {
+        "name": "relay_action_init",
+        "title": "{{lang.relaySetting}}",
+        "schema": {
+          "descriptionSetValue": {},
+          "actions": [
+            {
+              "action": "received",
+              "schema": {
+                "type": "number",
+                "enum": [0, 1, 2]
+              }
+            },
+            {
+              "action": "update_setting",
+              "schema": {
+                "type": "number",
+                "enum": [0, 1, 2]
+              }
+            }
+          ]
+        },
+        "display": {
+          "type": "View",
+          "children": [
+            {
+              "type": "View",
+              "children": [
+                {
+                  "type": "View",
+                  "children": [
+                    {
+                      "type": "TouchableOpacity",
+                      "children": [
+                        {
+                          "type": "Image",
+                          "props": {
+                            "source": "{{theme.icons.back}}",
+                            "style": {
+                              "width": 16,
+                              "height": 16
+                            }
+                          }
+                        }
+                      ],
+                      "props": {
+                        "style": {
+                          "position": "absolute",
+                          "left": -16,
+                          "padding": 16
+                        },
+                        "onPress": [
+                          {
+                            "functionName": "goBack",
+                            "args": []
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Text",
+                      "children": "{{lang.relaySetting}}",
+                      "props": {
+                        "style": {
+                          "color": "{{theme.colors.textColor}}",
+                          "fontFamily": "{{theme.fonts.fontBold}}",
+                          "width": "100%",
+                          "flex": 1,
+                          "fontSize": 20,
+                          "lineHeight": 28,
+                          "maxWidth": "70%",
+                          "textAlign": "center"
+                        },
+                        "ellipsizeMode": "tail",
+                        "numberOfLines": 1
+                      }
+                    }
+                  ],
+                  "props": {
+                    "style": {
+                      "width": "100%",
+                      "flexDirection": "row",
+                      "alignItems": "center",
+                      "justifyContent": "center"
+                    }
+                  }
+                }
+              ],
+              "props": {
+                "style": {
+                  "width": "100%",
+                  "paddingBottom": 16,
+                  "paddingHorizontal": 24,
+                  "paddingTop": 50
+                }
+              }
+            },
+            {
+              "type": "View",
+              "children": [
+                {
+                  "type": "View",
+                  "children": [
+                    {
+                      "type": "Text",
+                      "children": "{{lang.startRelayStatus}} :",
+                      "props": {
+                        "ellipsizeMode": "tail",
+                        "numberOfLines": 1,
+                        "style": {
+                          "fontSize": 16,
+                          "lineHeight": 24,
+                          "marginBottom": 16,
+                          "marginTop": 16,
+                          "color": "{{theme.colors.textColor}}",
+                          "fontFamily": "{{theme.fonts.fontMedium}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "Select",
+                      "children": [],
+                      "props": {
+                        "data": {
+                          "value": "{{this.state.relay_action_init}}",
+                          "items": [
+                            {
+                              "label": "{{lang.maintainStatus}}",
+                              "value": 0
+                            },
+                            {
+                              "label": "{{lang.alwaysOn}}",
+                              "value": 1
+                            },
+                            {
+                              "label": "{{lang.alwaysOff}}",
+                              "value": 2
+                            }
+                          ]
+                        },
+                        "onChangeValue": [
+                          {
+                            "functionName": "onChangeState",
+                            "args": [["relay_action_init"]]
+                          },
+                          {
+                            "functionName": "onSaveSetting",
+                            "args": [["relay_action_init"]]
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "props": {
+                    "style": {
+                      "root": {
+                        "width": "100%",
+                        "flex": 1,
+                        "paddingHorizontal": 24,
+                        "paddingTop": 20
+                      }
+                    }
+                  }
+                }
+              ],
+              "props": {
+                "showsHorizontalScrollIndicator": false,
+                "showsVerticalScrollIndicator": false,
+                "style": {
+                  "width": "100%",
+                  "flex": 1,
+                  "paddingHorizontal": 24,
+                  "paddingTop": 20,
+                  "backgroundColor": "{{theme.colors.appColorThird}}"
+                }
+              }
+            }
+          ],
+          "props": {
+            "style": {
+              "width": "100%",
+              "flex": 1
+            }
+          }
+        }
+      },
+      {
+        "name": "wifi",
+        "title": "{{lang.selectWifi}}",
+        "schema": {
+          "descriptionSetValue": {},
+          "actions": [
+            {
+              "action": "received",
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "ssid": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "pass": {
+                      "type": "string",
+                      "minLength": 0
+                    },
+                    "active": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": ["ssid", "pass", "active"]
+                }
+              }
+            },
+            {
+              "action": "update_setting",
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "ssid": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "pass": {
+                    "type": "string",
+                    "minLength": 8
+                  }
+                },
+                "required": ["ssid", "pass"]
+              }
+            }
+          ]
+        },
+        "display": {
+          "type": "View",
+          "children": [
+            {
+              "type": "View",
+              "children": [
+                {
+                  "type": "View",
+                  "children": [
+                    {
+                      "type": "TouchableOpacity",
+                      "children": [
+                        {
+                          "type": "Image",
+                          "props": {
+                            "source": "{{theme.icons.back}}",
+                            "style": {
+                              "width": 16,
+                              "height": 16
+                            }
+                          }
+                        }
+                      ],
+                      "props": {
+                        "style": {
+                          "position": "absolute",
+                          "left": -16,
+                          "padding": 16
+                        },
+                        "onPress": [
+                          {
+                            "functionName": "goBack",
+                            "args": []
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Text",
+                      "children": "{{lang.selectWifi}}",
+                      "props": {
+                        "style": {
+                          "color": "{{theme.colors.textColor}}",
+                          "fontFamily": "{{theme.fonts.fontBold}}",
+                          "width": "100%",
+                          "flex": 1,
+                          "fontSize": 20,
+                          "lineHeight": 28,
+                          "maxWidth": "70%",
+                          "textAlign": "center"
+                        },
+                        "ellipsizeMode": "tail",
+                        "numberOfLines": 1
+                      }
+                    }
+                  ],
+                  "props": {
+                    "style": {
+                      "width": "100%",
+                      "flexDirection": "row",
+                      "alignItems": "center",
+                      "justifyContent": "center"
+                    }
+                  }
+                }
+              ],
+              "props": {
+                "style": {
+                  "width": "100%",
+                  "paddingBottom": 16,
+                  "paddingHorizontal": 24,
+                  "paddingTop": 50
+                }
+              }
+            },
+            {
+              "type": "Wifi",
+              "children": [],
+              "props": {
+                "navigation": "{{this.props.navigation}}",
+                "onUpdateSetting": "{{this.onUpdateSetting}}",
+                "onDeleteSetting": "{{this.onDeleteSetting}}",
+                "style": {
+                  "width": "100%",
+                  "paddingBottom": 16,
+                  "paddingHorizontal": 24,
+                  "paddingTop": 50
+                },
+                "data": "{{this.state.wifi}}"
+              }
+            }
+          ],
+          "props": {
+            "style": {
+              "width": "100%",
+              "flex": 1,
+              "justifyContent": "center"
+            }
+          }
+        }
+      },
+      {
+        "name": "timer",
+        "title": "{{lang.timer}}",
+        "schema": {
+          "descriptionSetValue": {},
+          "actions": [
+            {
+              "action": "received",
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "cron": {
+                      "type": "string"
+                    },
+                    "action": {
+                      "type": "object",
+                      "properties": {
+                        "state": {
+                          "type": "object",
+                          "properties": {
+                            "on_off": {
+                              "type": "boolean"
+                            }
+                          },
+                          "required": ["on_off"]
+                        }
+                      },
+                      "required": ["state"]
+                    },
+                    "enable": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": ["cron", "action", "enable"]
+                }
+              }
+            },
+            {
+              "action": "update_automation",
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "cron": {
+                      "type": "string"
+                    },
+                    "action": {
+                      "type": "object",
+                      "properties": {
+                        "state": {
+                          "type": "object",
+                          "properties": {
+                            "on_off": {
+                              "type": "boolean"
+                            }
+                          },
+                          "required": ["on_off"]
+                        }
+                      },
+                      "required": ["state"]
+                    },
+                    "enable": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": ["cron", "action", "enable"]
+                }
+              }
+            }
+          ]
+        },
+        "display": {
+          "type": "View",
+          "children": [
+            {
+              "type": "View",
+              "children": [
+                {
+                  "type": "View",
+                  "children": [
+                    {
+                      "type": "TouchableOpacity",
+                      "children": [
+                        {
+                          "type": "Image",
+                          "props": {
+                            "source": "{{theme.icons.back}}",
+                            "style": {
+                              "width": 16,
+                              "height": 16
+                            }
+                          }
+                        }
+                      ],
+                      "props": {
+                        "style": {
+                          "position": "absolute",
+                          "left": -16,
+                          "padding": 16
+                        },
+                        "onPress": [
+                          {
+                            "functionName": "goBack",
+                            "args": []
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Text",
+                      "children": "{{lang.timer}}",
+                      "props": {
+                        "style": {
+                          "color": "{{theme.colors.textColor}}",
+                          "fontFamily": "{{theme.fonts.fontBold}}",
+                          "width": "100%",
+                          "flex": 1,
+                          "fontSize": 20,
+                          "lineHeight": 28,
+                          "maxWidth": "70%",
+                          "textAlign": "center"
+                        },
+                        "ellipsizeMode": "tail",
+                        "numberOfLines": 1
+                      }
+                    },
+                    {
+                      "type": "TouchableOpacity",
+                      "children": [
+                        {
+                          "type": "Image",
+                          "props": {
+                            "source": "{{theme.icons.add}}",
+                            "style": {
+                              "width": 16,
+                              "height": 16
+                            }
+                          }
+                        }
+                      ],
+                      "props": {
+                        "style": {
+                          "position": "absolute",
+                          "right": -16,
+                          "padding": 16
+                        },
+                        "onPress": [
+                          {
+                            "functionName": "navigate",
+                            "args": [
+                              "detailtimer",
+                              {
+                                "action": {
+                                  "state": {
+                                    "on_off": true
+                                  }
+                                },
+                                "cron": "0 0 * * 1,3,4",
+                                "enable": true,
+                                "onSaveTimer": [
+                                  {
+                                    "functionName": "onChangeStateWithPushAutomation",
+                                    "args": [["timer"]]
+                                  }
+                                ],
+                                "onDeleteTimer": [
+                                  {
+                                    "functionName": "onChangeState",
+                                    "args": [["timer"]]
+                                  },
+                                  {
+                                    "functionName": "onSaveAutomationRule",
+                                    "args": [["timer"]]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "props": {
+                    "style": {
+                      "width": "100%",
+                      "flexDirection": "row",
+                      "alignItems": "center",
+                      "justifyContent": "center"
+                    }
+                  }
+                }
+              ],
+              "props": {
+                "style": {
+                  "width": "100%",
+                  "paddingBottom": 16,
+                  "paddingHorizontal": 24,
+                  "paddingTop": 50
+                }
+              }
+            },
+            {
+              "type": "View",
+              "children": [
+                {
+                  "type": "FlatList",
+                  "children": [],
+                  "props": {
+                    "receivedData": "{{this.state.timer}}",
+                    "onUpdateAutomationRules": "{{this.onUpdateAutomationRules}}",
+                    "navigation": "{{this.props.navigation}}",
+                    "data": "{{this.state.timer}}",
+                    "components": "{{}}",
+                    "itemComponent": {
+                      "type": "TimerComponent",
+                      "props": {
+                        "onNavigateDetailTimer": [
+                          {
+                            "functionName": "navigate",
+                            "args": [
+                              "detailtimer",
+                              {
+                                "onSaveTimer": [
+                                  {
+                                    "functionName": "onChangeState",
+                                    "args": [["timer"]]
+                                  },
+                                  {
+                                    "functionName": "onSaveAutomationRule",
+                                    "args": [["timer"]]
+                                  }
+                                ],
+                                "onDeleteTimer": [
+                                  {
+                                    "functionName": "onChangeState",
+                                    "args": [["timer"]]
+                                  },
+                                  {
+                                    "functionName": "onSaveAutomationRule",
+                                    "args": [["timer"]]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "onChangeValue": [
+                          {
+                            "functionName": "onChangeState",
+                            "args": [["timer"]]
+                          },
+                          {
+                            "functionName": "onSaveAutomationRule",
+                            "args": [["timer"]]
+                          }
+                        ]
+                      },
+                      "children": []
+                    }
+                  }
+                }
+              ],
+              "props": {
+                "style": {
+                  "width": "100%",
+                  "flex": 1,
+                  "paddingHorizontal": 24,
+                  "paddingTop": 20,
+                  "backgroundColor": "{{theme.colors.appColorThird}}"
+                }
+              }
+            }
+          ],
+          "props": {
+            "style": {
+              "width": "100%",
+              "flex": 1,
+              "justifyContent": "center"
+            }
+          }
+        }
+      },
+      {
+        "name": "meter_reading_date",
+        "title": "{{lang.meterReadingDate}}",
+        "schema": {
+          "descriptionSetValue": {},
+          "actions": [
+            {
+              "action": "received",
+              "schema": {
+                "type": "number"
+              }
+            },
+            {
+              "action": "update_setting",
+              "schema": {
+                "type": "number"
+              }
+            }
+          ]
+        },
+        "display": {
+          "type": "View",
+          "children": [
+            {
+              "type": "View",
+              "children": [
+                {
+                  "type": "View",
+                  "children": [
+                    {
+                      "type": "TouchableOpacity",
+                      "children": [
+                        {
+                          "type": "Image",
+                          "props": {
+                            "source": "{{theme.icons.back}}",
+                            "style": {
+                              "width": 16,
+                              "height": 16
+                            }
+                          }
+                        }
+                      ],
+                      "props": {
+                        "style": {
+                          "position": "absolute",
+                          "left": -16,
+                          "padding": 16
+                        },
+                        "onPress": [
+                          {
+                            "functionName": "goBack",
+                            "args": []
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Text",
+                      "children": "{{lang.meterReadingDate}}",
+                      "props": {
+                        "style": {
+                          "color": "{{theme.colors.textColor}}",
+                          "fontFamily": "{{theme.fonts.fontBold}}",
+                          "width": "100%",
+                          "flex": 1,
+                          "fontSize": 20,
+                          "lineHeight": 28,
+                          "maxWidth": "70%",
+                          "textAlign": "center"
+                        },
+                        "ellipsizeMode": "tail",
+                        "numberOfLines": 1
+                      }
+                    }
+                  ],
+                  "props": {
+                    "style": {
+                      "width": "100%",
+                      "flexDirection": "row",
+                      "alignItems": "center",
+                      "justifyContent": "center"
+                    }
+                  }
+                }
+              ],
+              "props": {
+                "style": {
+                  "width": "100%",
+                  "paddingBottom": 16,
+                  "paddingHorizontal": 24,
+                  "paddingTop": 50
+                }
+              }
+            },
+            {
+              "type": "View",
+              "children": [
+                {
+                  "type": "View",
+                  "children": [
+                    {
+                      "type": "Text",
+                      "props": {
+                        "style": {
+                          "fontSize": 16,
+                          "lineHeight": 24,
+                          "color": "{{theme.colors.textColor}}",
+                          "fontFamily": "{{theme.fonts.fontMedium}}"
+                        }
+                      },
+                      "children": "Chốt số điện vào ngày"
+                    },
+                    {
+                      "type": "Calendar",
+                      "props": {
+                        "date": "{{this.state.meter_reading_date}}",
+                        "theme": "{{this.props.theme}}",
+                        "lang": "{{this.props.lang}}",
+                        "onChangeValue": [
+                          {
+                            "functionName": "onChangeState",
+                            "args": [["meter_reading_date"]]
+                          },
+                          {
+                            "functionName": "onSaveSetting",
+                            "args": [["meter_reading_date"]]
+                          }
+                        ],
+                        "style": {
+                          "paddingTop": 0,
+                          "marignRight": 5
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "type": "Text",
+                      "props": {
+                        "style": {
+                          "fontSize": 16,
+                          "lineHeight": 24,
+                          "color": "{{theme.colors.textColor}}",
+                          "fontFamily": "{{theme.fonts.fontMedium}}"
+                        },
+                        "numberOfLines": 2,
+                        "ellipsizeMode": "tail"
+                      },
+                      "children": "hàng tháng"
+                    }
+                  ],
+                  "props": {
+                    "style": {
+                      "justifyContent": "center",
+                      "flexDirection": "row",
+                      "alignItems": "center"
+                    }
+                  }
+                }
+              ],
+              "props": {
+                "style": {
+                  "width": "100%",
+                  "flex": 1,
+                  "paddingHorizontal": 24,
+                  "paddingTop": 20,
+                  "backgroundColor": "{{theme.colors.appColorThird}}"
+                }
+              }
+            }
+          ],
+          "props": {
+            "style": {
+              "width": "100%",
+              "flex": 1
+            }
+          }
+        }
+      },
+      {
+        "name": "warning",
+        "title": "{{lang.warning}}",
+        "schema": {
+          "descriptionSetValue": {},
+          "actions": [
+            {
+              "action": "received",
+              "schema": {
+                "type": "object"
+              }
+            },
+            {
+              "action": "update_setting",
+              "schema": {
+                "type": "object"
+              }
+            }
+          ]
+        },
+        "display": {
+          "type": "View",
+          "children": [
+            {
+              "type": "View",
+              "children": [
+                {
+                  "type": "View",
+                  "children": [
+                    {
+                      "type": "TouchableOpacity",
+                      "children": [
+                        {
+                          "type": "Image",
+                          "props": {
+                            "source": "{{theme.icons.back}}",
+                            "style": {
+                              "width": 16,
+                              "height": 16
+                            }
+                          }
+                        }
+                      ],
+                      "props": {
+                        "style": {
+                          "position": "absolute",
+                          "left": -16,
+                          "padding": 16
+                        },
+                        "onPress": [
+                          {
+                            "functionName": "goBack",
+                            "args": []
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Text",
+                      "children": "{{lang.warning}}",
+                      "props": {
+                        "style": {
+                          "color": "{{theme.colors.textColor}}",
+                          "fontFamily": "{{theme.fonts.fontBold}}",
+                          "width": "100%",
+                          "flex": 1,
+                          "fontSize": 20,
+                          "lineHeight": 28,
+                          "maxWidth": "70%",
+                          "textAlign": "center"
+                        },
+                        "ellipsizeMode": "tail",
+                        "numberOfLines": 1
+                      }
+                    }
+                  ],
+                  "props": {
+                    "style": {
+                      "width": "100%",
+                      "flexDirection": "row",
+                      "alignItems": "center",
+                      "justifyContent": "center"
+                    }
+                  }
+                }
+              ],
+              "props": {
+                "style": {
+                  "width": "100%",
+                  "paddingBottom": 16,
+                  "paddingHorizontal": 24,
+                  "paddingTop": 50
+                }
+              }
+            },
+            {
+              "type": "ScrollView",
+              "children": [
+                {
+                  "type": "View",
+                  "children": [
+                    {
+                      "type": "View",
+                      "children": [
+                        {
+                          "type": "Text",
+                          "children": "{{lang.voltage}}",
+                          "props": {
+                            "style": {
+                              "fontSize": 18,
+                              "lineHeight": 24,
+                              "marginBottom": 6,
+                              "textTransform": "capitalize",
+                              "color": "{{theme.colors.textColor}}",
+                              "fontFamily": "{{theme.fonts.fontMedium}}"
+                            }
+                          }
+                        },
+                        {
+                          "type": "WarningItem",
+                          "children": [],
+                          "props": {
+                            "data": {
+                              "modal": "{{this.state.warning.voltage.low}}",
+                              "title": "{{lang.voltageDropWarning}}",
+                              "editTitle": "{{lang.voltageDrop}}",
+                              "schemaValue": {
+                                "type": "number",
+                                "minimum": 110,
+                                "maximum": 198
+                              }
+                            },
+                            "onChangeValue": [
+                              {
+                                "functionName": "onChangeState",
+                                "args": [["warning", "voltage", "low"]]
+                              },
+                              {
+                                "functionName": "onSaveSetting",
+                                "args": [["warning"]]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "type": "WarningItem",
+                          "children": [],
+                          "props": {
+                            "data": {
+                              "modal": "{{this.state.warning.voltage.high}}",
+                              "title": "{{lang.overloadVoltageWarning}}",
+                              "editTitle": "{{lang.overloadVoltage}}",
+                              "schemaValue": {
+                                "type": "number",
+                                "minimum": 242,
+                                "maximum": 330
+                              }
+                            },
+                            "onChangeValue": [
+                              {
+                                "functionName": "onChangeState",
+                                "args": [["warning", "voltage", "high"]]
+                              },
+                              {
+                                "functionName": "onSaveSetting",
+                                "args": [["warning"]]
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "props": {
+                        "style": {
+                          "width": "100%"
+                        }
+                      }
+                    },
+                    {
+                      "type": "View",
+                      "children": [
+                        {
+                          "type": "Text",
+                          "children": "{{lang.electric}}",
+                          "props": {
+                            "style": {
+                              "fontSize": 18,
+                              "lineHeight": 24,
+                              "marginBottom": 6,
+                              "marginTop": 30,
+                              "textTransform": "capitalize",
+                              "color": "{{theme.colors.textColor}}",
+                              "fontFamily": "{{theme.fonts.fontMedium}}"
+                            }
+                          }
+                        },
+                        {
+                          "type": "WarningItem",
+                          "children": [],
+                          "props": {
+                            "data": {
+                              "modal": "{{this.state.warning.current.high}}",
+                              "title": "{{lang.overcurrentWarning}}",
+                              "editTitle": "{{lang.overcurrent}}",
+                              "schemaValue": {
+                                "type": "number",
+                                "minimum": 1,
+                                "maximum": 60
+                              }
+                            },
+                            "onChangeValue": [
+                              {
+                                "functionName": "onChangeState",
+                                "args": [["warning", "current", "high"]]
+                              },
+                              {
+                                "functionName": "onSaveSetting",
+                                "args": [["warning"]]
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "props": {
+                        "style": {
+                          "width": "100%"
+                        }
+                      }
+                    },
+                    {
+                      "type": "View",
+                      "children": [
+                        {
+                          "type": "Text",
+                          "children": "{{lang.wattage}}",
+                          "props": {
+                            "style": {
+                              "fontSize": 18,
+                              "lineHeight": 24,
+                              "marginBottom": 6,
+                              "marginTop": 30,
+                              "textTransform": "capitalize",
+                              "color": "{{theme.colors.textColor}}",
+                              "fontFamily": "{{theme.fonts.fontMedium}}"
+                            }
+                          }
+                        },
+                        {
+                          "type": "WarningItem",
+                          "children": [],
+                          "props": {
+                            "data": {
+                              "modal": "{{this.state.warning.power.high}}",
+                              "title": "{{lang.overloadPowerWarning}}",
+                              "editTitle": "{{lang.overloadPower}}",
+                              "schemaValue": {
+                                "type": "number",
+                                "minimum": 1,
+                                "maximum": 10000
+                              }
+                            },
+                            "onChangeValue": [
+                              {
+                                "functionName": "onChangeState",
+                                "args": [["warning", "power", "high"]]
+                              },
+                              {
+                                "functionName": "onSaveSetting",
+                                "args": [["warning"]]
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "props": {
+                        "style": {
+                          "width": "100%"
+                        }
+                      }
+                    }
+                  ],
+                  "props": {
+                    "style": {
+                      "width": "100%",
+                      "paddingHorizontal": 24,
+                      "paddingTop": 12
+                    }
+                  }
+                }
+              ],
+              "props": {
+                "showsHorizontalScrollIndicator": false,
+                "showsVerticalScrollIndicator": false,
+                "contentContainerStyle": {
+                  "flexGrow": 1,
+                  "backgroundColor": "{{theme.colors.appColorThird}}"
+                }
+              }
+            }
+          ],
+          "props": {
+            "style": {
+              "width": "100%",
+              "flex": 1
+            }
+          }
+        }
+      },
+      {
+        "name": "updateFirmware",
+        "title": "{{lang.updateFirmware}}",
+        "schema": {
+          "actions": [
+            {
+              "action": "received",
+              "schema": {}
+            }
+          ]
+        },
+        "display": {
+          "type": "View",
+          "children": [
+            {
+              "type": "View",
+              "children": [
+                {
+                  "type": "View",
+                  "children": [
+                    {
+                      "type": "TouchableOpacity",
+                      "children": [
+                        {
+                          "type": "Image",
+                          "props": {
+                            "source": "{{theme.icons.back}}",
+                            "style": {
+                              "width": 16,
+                              "height": 16
+                            }
+                          }
+                        }
+                      ],
+                      "props": {
+                        "style": {
+                          "position": "absolute",
+                          "left": -16,
+                          "padding": 16
+                        },
+                        "onPress": [
+                          {
+                            "functionName": "goBack",
+                            "args": []
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Text",
+                      "children": "{{lang.buttonSetting}}",
+                      "props": {
+                        "style": {
+                          "color": "{{theme.colors.textColor}}",
+                          "fontFamily": "{{theme.fonts.fontBold}}",
+                          "width": "100%",
+                          "flex": 1,
+                          "fontSize": 20,
+                          "lineHeight": 28,
+                          "maxWidth": "70%",
+                          "textAlign": "center"
+                        },
+                        "ellipsizeMode": "tail",
+                        "numberOfLines": 1
+                      }
+                    }
+                  ],
+                  "props": {
+                    "style": {
+                      "width": "100%",
+                      "flexDirection": "row",
+                      "alignItems": "center",
+                      "justifyContent": "center"
+                    }
+                  }
+                }
+              ],
+              "props": {
+                "style": {
+                  "width": "100%",
+                  "paddingBottom": 16,
+                  "paddingHorizontal": 24,
+                  "paddingTop": 50
+                }
+              }
+            },
+            {
+              "type": "UpdateFirmware",
+              "children": [],
+              "props": {
+                "onUpdateOta": [
+                  {
+                    "functionName": "onUpdateOta",
+                    "args": []
+                  }
+                ],
+                "cEntity": "{{this.props.cEntity}}",
+                "style": {
+                  "backgroundColor": "{{theme.colors.appColorThird}}",
+                  "flex": 1,
+                  "flexGrow": 1
+                }
+              }
+            }
+          ],
+          "props": {
+            "style": {
+              "width": "100%",
+              "flex": 1
+            }
+          }
+        }
+      }
+    ],
+    "version": "v0.0.1"
+  }
+}

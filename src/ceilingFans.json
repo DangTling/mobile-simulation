@@ -1,0 +1,351 @@
+{
+  "shortcut": {
+    "view": {
+      "column": 1,
+      "data_area": 4,
+      "area": []
+    }
+  },
+  "detail": {
+    "view": {
+      "column": 1,
+      "data_area": 4,
+      "area": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 50,
+          "height": 85,
+          "type": "image",
+          "value": "1",
+          "map_data": {
+            "default": {
+              "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/ceilingFans/BG_image.png"
+            }
+          },
+          "image_style": {
+            "height": "100%",
+            "width": "100%",
+            "resizeMode": "stretch"
+          }
+        },
+        {
+          "x": 21.5,
+          "y": 20,
+          "width": 7,
+          "height": 12,
+          "type": "image",
+          "value": "1",
+          "image_style": {
+            "width": "100%",
+            "height": "100%"
+          },
+          "map_data": {
+            "default": {
+              "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/ceilingFans/bodyFan2.png"
+            }
+          }
+        },
+        {
+          "x": 0,
+          "y": 75,
+          "width": 50,
+          "height": 80,
+          "type": "image",
+          "value": "1",
+          "map_data": {
+            "default": {
+              "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/freezer/bg_control.png"
+            }
+          },
+          "image_style": {
+            "height": "100%",
+            "width": "100%",
+            "resizeMode": "stretch"
+          },
+          "style": {
+            "borderRadius": 10
+          }
+        },
+        {
+          "x": 8,
+          "y": 78,
+          "width": 34,
+          "height": 18,
+          "type": "view",
+          "style": {
+            "backgroundColor": "#000000",
+            "borderRadius": 10
+          }
+        },
+        {
+          "x": 20,
+          "y": 77,
+          "width": 10,
+          "height": 10,
+          "type": "text",
+          "value": ["fan_speed"],
+          "fontSize": 50,
+          "text_style": {
+            "color": "#85E1FF",
+            "fontWeight": "800"
+          },
+          "style": {
+            "alignItems": "center"
+          }
+        },
+        {
+          "x": 20,
+          "y": 86.5,
+          "width": 10,
+          "height": 3,
+          "type": "image",
+          "value": "1",
+          "image_style": {
+            "width": "100%",
+            "height": "100%"
+          },
+          "data_type": "boolean",
+          "map_data": {
+            "default": {
+              "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/shadow.png"
+            }
+          }
+        },
+        {
+          "x": 15.5,
+          "y": 89.5,
+          "width": 5,
+          "height": 5,
+          "type": "image",
+          "value": ["timer_active"],
+          "image_style": {
+            "width": "100%",
+            "height": "100%"
+          },
+          "data_type": "boolean",
+          "map_data": {
+            "true": {
+              "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/timerIcon.png"
+            },
+            "false": {},
+            "default": {}
+          }
+        },
+        {
+          "x": 22.5,
+          "y": 89.5,
+          "width": 5,
+          "height": 5,
+          "type": "image",
+          "value": ["eco"],
+          "image_style": {
+            "width": "100%",
+            "height": "100%"
+          },
+          "data_type": "boolean",
+          "map_data": {
+            "true": {
+              "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/ecoIcon.png"
+            },
+            "false": {},
+            "default": {}
+          }
+        },
+        {
+          "x": 30,
+          "y": 90,
+          "width": 4,
+          "height": 4,
+          "type": "image",
+          "value": ["motion"],
+          "image_style": {
+            "width": "100%",
+            "height": "100%"
+          },
+          "data_type": "boolean",
+          "map_data": {
+            "true": {
+              "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/motionSensor.png"
+            },
+            "false": {},
+            "default": {}
+          }
+        },
+        {
+          "x": 17,
+          "y": 102.5,
+          "width": 16,
+          "height": 16,
+          "type": "image",
+          "value": ["on_off"],
+          "image_style": {
+            "width": "100%",
+            "height": "100%"
+          },
+          "data_type": "boolean",
+          "map_data": {
+            "true": {
+              "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/ON.png"
+            },
+            "false": {
+              "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/OffNew.png"
+            },
+            "default": {
+              "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/OffNew.png"
+            }
+          },
+          "function": {
+            "name": "updateState"
+          }
+        },
+        {
+          "x": 5,
+          "y": 104.5,
+          "width": 13,
+          "height": 13,
+          "type": "image",
+          "value": ["fan_speed"],
+          "image_style": {
+            "width": "100%",
+            "height": "100%"
+          },
+          "map_data": {
+            "default": {
+              "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/decrease.png"
+            }
+          },
+          "function": {
+            "name": "nextStepValue",
+            "step": -1,
+            "maxValue": ["fan_speed_max"],
+            "minValue": 1
+          }
+        },
+        {
+          "x": 32,
+          "y": 104.5,
+          "width": 13,
+          "height": 13,
+          "type": "image",
+          "value": ["fan_speed"],
+          "image_style": {
+            "width": "100%",
+            "height": "100%"
+          },
+          "map_data": {
+            "default": {
+              "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/increase.png"
+            }
+          },
+          "function": {
+            "name": "nextStepValue",
+            "step": 1,
+            "maxValue": ["fan_speed_max"],
+            "minValue": 1
+          }
+        },
+        {
+          "x": 21.5,
+          "y": 29.7,
+          "width": 7,
+          "height": 4,
+          "type": "image",
+          "value": "1",
+          "map_data": {
+            "default": {
+              "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/ceilingFans/layer3.png"
+            }
+          },
+          "image_style": {
+            "height": "100%",
+            "width": "100%",
+            "resizeMode": "stretch"
+          },
+          "style": {
+            "zIndex": 99
+          }
+        },
+        {
+          "x": 2.5,
+          "y": 2.1,
+          "width": 45,
+          "height": 60,
+          "type": "view",
+          "cp": "fan",
+          "values": [
+            {
+              "state": "fan_speed",
+              "map_to_props": ["fan_speed"]
+            }
+          ],
+          "param": {
+            "number_fan_wing": 4,
+            "full_fan": true,
+            "speed": 0.4,
+            "source": {
+              "fan_wing": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/ceilingFans/swingFan5.png",
+              "all_fan": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/ceilingFans/swingFan5.png"
+            }
+          },
+          "style": {
+            "transform": [
+              {
+                "rotateX": "70deg"
+              }
+            ],
+            "zIndex": 999
+          }
+        },
+        {
+          "x": 21.7,
+          "y": 30.8,
+          "width": 6.6,
+          "height": 4,
+          "type": "image",
+          "value": "1",
+          "map_data": {
+            "default": {
+              "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/ceilingFans/centerSwing2.png"
+            }
+          },
+          "image_style": {
+            "height": "100%",
+            "width": "100%",
+            "resizeMode": "stretch"
+          },
+          "style": {
+            "zIndex": 9999
+          }
+        },
+        {
+          "x": 17.5,
+          "y": 123,
+          "width": 15,
+          "height": 15,
+          "type": "image",
+          "value": ["eco"],
+          "map_data": {
+            "true": {
+              "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/Eco.png"
+            },
+            "false": {
+              "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/EcoDeactiveNew.png"
+            },
+            "default": {
+              "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/EcoDeactiveNew.png"
+            }
+          },
+          "image_style": {
+            "width": "100%",
+            "height": "100%"
+          },
+          "data_type": "boolean",
+          "function": {
+            "name": "updateState"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,639 @@
+{
+    "shortcut": {
+        "view": {
+            "column": 1,
+            "data_area": 4,
+            "area": [
+                {
+                    "x": 1,
+                    "y": 0,
+                    "width": 4,
+                    "height": 3,
+                    "cluster": [
+                        1
+                    ],
+                    "type": "text",
+                    "fontSize": 35,
+                    "style": {},
+                    "value": [
+                        "fan_speed"
+                    ]
+                },
+                {
+                    "x": 1,
+                    "y": 2.5,
+                    "width": 4,
+                    "height": 2,
+                    "cluster": [
+                        1
+                    ],
+                    "type": "text",
+                    "fontSize": 18,
+                    "style": {
+                        "justifyContent": "flex-end"
+                    },
+                    "value": "Tốc độ"
+                },
+                {
+                    "x": 14,
+                    "y": 0,
+                    "width": 2,
+                    "height": 2,
+                    "type": "image",
+                    "value": [
+                        "swing"
+                    ],
+                    "map_data": {
+                        "true": "swingActive",
+                        "false": "swingDeactive",
+                        "default": "swingDeactive"
+                    },
+                    "style": {
+                        "justifyContent": "flex-start"
+                    },
+                    "image_style": {
+                        "width": 20,
+                        "height": 20
+                    }
+                },
+                {
+                    "x": 14,
+                    "y": 1,
+                    "width": 2,
+                    "height": 2,
+                    "cluster": [
+                        1
+                    ],
+                    "type": "image",
+                    "value": [
+                        "fan_speed"
+                    ],
+                    "style": {},
+                    "map_data": {
+                        "1": "lowSpeed",
+                        "2": "mediumSpeed",
+                        "3": "hightSpeed",
+                        "default": "lowSpeed"
+                    },
+                    "image_style": {
+                        "width": 20,
+                        "height": 20
+                    }
+                },
+                {
+                    "x": 14,
+                    "y": 2.35,
+                    "width": 2,
+                    "height": 2,
+                    "cluster": [
+                        1
+                    ],
+                    "type": "image",
+                    "value": [
+                        "rhythm"
+                    ],
+                    "style": {
+                        "justifyContent": "flex-end"
+                    },
+                    "map_data": {
+                        "true": "rhythmA",
+                        "false": "rhythm",
+                        "default": "rhythm"
+                    },
+                    "image_style": {
+                        "width": 20,
+                        "height": 20
+                    }
+                },
+                {
+                    "x": 7,
+                    "y": 0,
+                    "width": 1,
+                    "height": 4,
+                    "type": "image",
+                    "value": "verticalLine",
+                    "style": {
+                        "alignItems": "flex-start",
+                        "justifyContent": "center"
+                    },
+                    "image_style": {
+                        "width": 1,
+                        "height": "100%"
+                    }
+                },
+                {
+                    "x": 9,
+                    "y": 0,
+                    "width": 4,
+                    "height": 1.2,
+                    "type": "text",
+                    "value": "Quay:",
+                    "style": {
+                        "alignItems": "flex-end"
+                    }
+                },
+                {
+                    "x": 9,
+                    "y": 1.2,
+                    "width": 4,
+                    "height": 2,
+                    "type": "text",
+                    "value": "Fan:",
+                    "style": {
+                        "alignItems": "flex-end"
+                    }
+                },
+                {
+                    "x": 8,
+                    "y": 3,
+                    "width": 5,
+                    "height": 1.2,
+                    "type": "text",
+                    "value": "Gió thoảng:",
+                    "style": {
+                        "alignItems": "flex-end",
+                        "justifyContent": "flex-end"
+                    }
+                }
+            ]
+        }
+    },
+    "detail": {
+        "view": {
+            "column": 1,
+            "data_area": 4,
+            "area": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 50,
+                    "height": 85,
+                    "type": "image",
+                    "value": "1",
+                    "map_data": {
+                        "1": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/curtain/bg_View.png"
+                        }
+                    },
+                    "image_style": {
+                        "height": "100%",
+                        "width": "100%",
+                        "resizeMode": "stretch"
+                    }
+                },
+                {
+                    "x": 20,
+                    "y": 49,
+                    "width": 10,
+                    "height": 40,
+                    "type": "image",
+                    "value": "1",
+                    "image_style": {
+                        "width": "100%",
+                        "height": "100%"
+                    },
+                    "map_data": {
+                        "1": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/fanBody.png"
+                        }
+                    }
+                },
+                {
+                    "x": 10,
+                    "y": 17.5,
+                    "width": 30,
+                    "height": 45,
+                    "type": "view",
+                    "cp": "fan",
+                    "values": [
+                        {
+                            "state": "fan_speed",
+                            "map_to_props": [
+                                "fan_speed"
+                            ]
+                        }
+                    ],
+                    "param": {
+                        "number_fan_wing": 4,
+                        "full_fan": true,
+                        "speed": 0.5,
+                        "source": {
+                            "fan_wing": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/swingFan5.png",
+                            "all_fan": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/swingFan5.png"
+                        }
+                    }
+                },
+                {
+                    "x": 5,
+                    "y": 15,
+                    "width": 40,
+                    "height": 50,
+                    "type": "image",
+                    "value": "1",
+                    "image_style": {
+                        "width": "100%",
+                        "height": "100%"
+                    },
+                    "map_data": {
+                        "1": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/fanCage.png"
+                        }
+                    }
+                },
+                {
+                    "x": 0,
+                    "y": 80,
+                    "width": 50,
+                    "height": 80,
+                    "type": "image",
+                    "value": "1",
+                    "map_data": {
+                        "1": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/freezer/bg_control.png"
+                        }
+                    },
+                    "image_style": {
+                        "height": "100%",
+                        "width": "100%",
+                        "resizeMode": "stretch"
+                    },
+                    "style": {
+                        "borderRadius": 10
+                    }
+                },
+                {
+                    "x": 2.5,
+                    "y": 83,
+                    "width": 45,
+                    "height": 10,
+                    "type": "view",
+                    "style": {
+                        "backgroundColor": "#000000",
+                        "borderRadius":10
+                    }
+                },
+                {
+                    "x": 20,
+                    "y": 82,
+                    "width": 10,
+                    "height": 10,
+                    "type": "text",
+                    "value": [
+                        "fan_speed"
+                    ],
+                    "fontSize": 50,
+                    "text_style": {
+                        "color": "#85E1FF",
+                        "fontWeight": "800"
+                    },
+                    "style": {
+                        "alignItems": "center"
+                    }
+                },
+                {
+                    "x": 20,
+                    "y": 91,
+                    "width": 10,
+                    "height": 3,
+                    "type": "image",
+                    "value":"1",
+                    "image_style": {
+                        "width": "100%",
+                        "height": "100%"
+                    },
+                    "data_type": "boolean",
+                    "map_data": {
+                        "default": {"uri":"https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/shadow.png"}
+                    }
+                },
+                {
+                    "x": 3.5,
+                    "y": 85.5,
+                    "width": 5,
+                    "height": 5,
+                    "type": "image",
+                    "value": [
+                        "mode"
+                    ],
+                    "image_style": {
+                        "width": "100%",
+                        "height": "100%"
+                    },
+                    "data_type": "boolean",
+                    "map_data": {
+                        "1": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/rhythmIcon.png"
+                        },
+                        "0": {},
+                        "default": {}
+                    }
+                },
+                {
+                    "x": 9.3,
+                    "y": 85.5,
+                    "width": 5,
+                    "height": 5,
+                    "type": "image",
+                    "value": [
+                        "swing"
+                    ],
+                    "image_style": {
+                        "width": "100%",
+                        "height": "100%"
+                    },
+                    "data_type": "boolean",
+                    "map_data": {
+                        "true": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/swingIcon.png"
+                        },
+                        "false": {},
+                        "default": {}
+                    }
+                },
+                {
+                    "x": 15,
+                    "y": 85.5,
+                    "width": 5,
+                    "height": 5,
+                    "type": "image",
+                    "value": [
+                        "timer_active"
+                    ],
+                    "image_style": {
+                        "width": "100%",
+                        "height": "100%"
+                    },
+                    "data_type": "boolean",
+                    "map_data": {
+                        "true": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/timerIcon.png"
+                        },
+                        "false": {},
+                        "default": {}
+                    }
+                },
+                {
+                    "x": 30,
+                    "y": 85.5,
+                    "width": 5,
+                    "height": 5,
+                    "type": "image",
+                    "value": [
+                        "eco"
+                    ],
+                    "image_style": {
+                        "width": "100%",
+                        "height": "100%"
+                    },
+                    "data_type": "boolean",
+                    "map_data": {
+                        "true": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/ecoIcon.png"
+                        },
+                        "false": {},
+                        "default": {}
+                    }
+                },
+                {
+                    "x": 41.5,
+                    "y": 85.5,
+                    "width": 5,
+                    "height": 5,
+                    "type": "image",
+                    "value": [
+                        "motion"
+                    ],
+                    "image_style": {
+                        "width": "100%",
+                        "height": "100%"
+                    },
+                    "data_type": "boolean",
+                    "map_data": {
+                        "true": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/motionSensor.png"
+                        },
+                        "false": {},
+                        "default": {}
+                    }
+                },
+                {
+                    "x": 35.7,
+                    "y": 85.5,
+                    "width": 5,
+                    "height": 5,
+                    "type": "image",
+                    "value": [
+                        "led"
+                    ],
+                    "image_style": {
+                        "width": "100%",
+                        "height": "100%"
+                    },
+                    "data_type": "boolean",
+                    "map_data": {
+                        "true": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/lightIcon.png"
+                        },
+                        "false": {},
+                        "default": {}
+                    }
+                },
+                {
+                    "x": 17,
+                    "y": 99.5,
+                    "width": 16,
+                    "height": 16,
+                    "type": "image",
+                    "value": [
+                        "on_off"
+                    ],
+                    "image_style": {
+                        "width": "100%",
+                        "height": "100%"
+                    },
+                    "data_type": "boolean",
+                    "map_data": {
+                        "true": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/ON.png"
+                        },
+                        "false": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/OffNew.png"
+                        },
+                        "default": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/OffNew.png"
+                        }
+                    },
+                    "function": {
+                        "name": "updateState"
+                    }
+                },
+                {
+                    "x": 5,
+                    "y": 101,
+                    "width": 13,
+                    "height": 13,
+                    "type": "image",
+                    "value": [
+                        "fan_speed"
+                    ],
+                    "image_style": {
+                        "width": "100%",
+                        "height": "100%"
+                    },
+                    "map_data": {
+                        "default": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/decrease.png"
+                        }
+                    },
+                    "function": {
+                        "name": "nextStepValue",
+                        "step": -1,
+                        "maxValue": ["fan_speed_max"],
+                        "minValue": 1
+                    }
+                },
+                {
+                    "x": 32,
+                    "y": 101,
+                    "width": 13,
+                    "height": 13,
+                    "type": "image",
+                    "value": [
+                        "fan_speed"
+                    ],
+                    "image_style": {
+                        "width": "100%",
+                        "height": "100%"
+                    },
+                    "map_data": {
+                        "default": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/increase.png"
+                        }
+                    },
+                    "function": {
+                        "name": "nextStepValue",
+                        "step": 1,
+                        "maxValue": ["fan_speed_max"],
+                        "minValue": 1
+                    }
+                },
+                {
+                    "x": -0.5,
+                    "y": 123,
+                    "width": 15,
+                    "height": 15,
+                    "type": "image",
+                    "value": [
+                        "mode"
+                    ],
+                    "map_data": {
+                        "0": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/RhythmDeactive.png"
+                        },
+                        "1": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/Rhythm.png"
+                        },
+                        "default": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/RhythmDeactive.png"
+                        }
+                    },
+                    "image_style": {
+                        "width": "100%",
+                        "height": "100%"
+                    },
+                    "data_type": "number",
+                    "function": {
+                        "name": "updateState"
+                    }
+                },
+                {
+                    "x": 11.5,
+                    "y": 123,
+                    "width": 15,
+                    "height": 15,
+                    "type": "image",
+                    "value": [
+                        "swing"
+                    ],
+                    "map_data": {
+                        "true": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/Swing.png"
+                        },
+                        "false": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/SwingDeactive.png"
+                        },
+                        "default": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/SwingDeactive.png"
+                        }
+                    },
+                    "image_style": {
+                        "width": "100%",
+                        "height": "100%"
+                    },
+                    "data_type": "boolean",
+                    "function": {
+                        "name": "updateState"
+                    }
+                },
+                {
+                    "x": 23.5,
+                    "y": 123,
+                    "width": 15,
+                    "height": 15,
+                    "type": "image",
+                    "value": [
+                        "eco"
+                    ],
+                    "map_data": {
+                        "true": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/Eco.png"
+                        },
+                        "false": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/EcoDeactiveNew.png"
+                        },
+                        "default": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/EcoDeactiveNew.png"
+                        }
+                    },
+                    "image_style": {
+                        "width": "100%",
+                        "height": "100%"
+                    },
+                    "data_type": "boolean",
+                    "function": {
+                        "name": "updateState"
+                    }
+                },
+                {
+                    "x": 35.6,
+                    "y": 123,
+                    "width": 15,
+                    "height": 15,
+                    "type": "image",
+                    "value": [
+                        "led"
+                    ],
+                    "image_style": {
+                        "width": "100%",
+                        "height": "100%"
+                    },
+                    "map_data": {
+                        "true": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/Light.png"
+                        },
+                        "false": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/LightDeactive.png"
+                        },
+                        "default": {
+                            "uri": "https://image-app-public.s3.ap-southeast-1.amazonaws.com/giangha/fan/LightDeactive.png"
+                        }
+                    },
+                    "data_type": "boolean",
+                    "function": {
+                        "name": "updateState"
+                    }
+                }
+            ]
+        }
+    }
+}
