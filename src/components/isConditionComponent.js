@@ -74,7 +74,11 @@ function IsConditionComponent(props) {
                       ? item.item.style.alignItems
                       : ""
                   }
-                  uri={item.item.map_data[item.item.value].uri}
+                  uri={
+                    item.item.map_data[item.item.value].uri
+                      ? item.item.map_data[item.item.value].uri
+                      : ""
+                  }
                 />
               );
             } else if (item.item.type === "text") {

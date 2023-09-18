@@ -16,6 +16,7 @@ function ElectricMeter2() {
     <>
       {comp &&
         comp.map((item, index) => {
+          console.log(item);
           if (item.type === "text") {
             return (
               <Text
