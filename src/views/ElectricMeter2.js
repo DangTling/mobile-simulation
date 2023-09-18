@@ -6,11 +6,21 @@ import View from "../components/View";
 import { useEffect, useState } from "react";
 import IsConditionComponent from "../components/isConditionComponent";
 import { setValueOfOn_Off } from "../redux/valueOfOn_OffSlice";
+import { setValueOfParamFan_speed } from "../redux/valueOfParamFan_speed";
+import { setValueOfParamMode } from "../redux/valueOfParamMode";
+import { setValueOfParamSwing } from "../redux/valueOfParamSwing";
 
 function ElectricMeter2() {
   const comp = useSelector((state) => state.comp);
-
+  const dispatch = useDispatch();
   let status = useSelector((state) => state.valueOfOn_Off);
+
+  // useEffect(() => {
+  //   dispatch(setValueOfOn_Off(null));
+  //   dispatch(setValueOfParamFan_speed(null));
+  //   dispatch(setValueOfParamMode(null));
+  //   dispatch(setValueOfParamSwing(null));
+  // }, [comp]);
 
   return (
     <>
@@ -71,6 +81,7 @@ function ElectricMeter2() {
                 }
                 func={item.function ? item.function : {}}
                 dataType={item.data_type ? item.data_type : ""}
+                value={item.value ? item.value[0] : ""}
               />
             );
           } else if (item.isConditionComponent) {

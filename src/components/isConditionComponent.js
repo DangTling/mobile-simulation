@@ -1,7 +1,6 @@
 import { useSelector } from "react-redux";
 import Image from "./Image";
 import Text from "./Text";
-import { useEffect, useState } from "react";
 
 function IsConditionComponent(props) {
   let status = useSelector((state) => state.valueOfOn_Off);
