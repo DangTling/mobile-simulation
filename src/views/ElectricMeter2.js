@@ -3,30 +3,42 @@ import Image from "../components/Image";
 import Text from "../components/Text";
 import View from "../components/View";
 
-import { useEffect, useState } from "react";
 import IsConditionComponent from "../components/isConditionComponent";
-import { setValueOfOn_Off } from "../redux/valueOfOn_OffSlice";
-import { setValueOfParamFan_speed } from "../redux/valueOfParamFan_speed";
-import { setValueOfParamMode } from "../redux/valueOfParamMode";
-import { setValueOfParamSwing } from "../redux/valueOfParamSwing";
+
+import ScrollView from "../components/ScrollView";
+import { useState } from "react";
+import { setItemWantFix } from "../redux/itemWantFix";
+
+import { setIndexWantFix } from "../redux/indexWantFix";
 
 function ElectricMeter2() {
   const comp = useSelector((state) => state.comp);
+  const itemWantFix = useSelector((state) => state.itemWantFix);
   const dispatch = useDispatch();
-  let status = useSelector((state) => state.valueOfOn_Off);
+  const [displayed, setDisplayed] = useState(false);
+  // const [itemWantFix, setItemWantFix] = useState({});
+  const handleClick = (item, index) => {
+    setDisplayed(true);
 
-  // useEffect(() => {
-  //   dispatch(setValueOfOn_Off(null));
-  //   dispatch(setValueOfParamFan_speed(null));
-  //   dispatch(setValueOfParamMode(null));
-  //   dispatch(setValueOfParamSwing(null));
-  // }, [comp]);
-
+    dispatch(setItemWantFix(item));
+    dispatch(setIndexWantFix(index));
+  };
+  const handleChange = (e) => {
+    try {
+      const newItem = JSON.parse(e.target.value);
+      dispatch(setItemWantFix(newItem));
+    } catch (error) {
+      console.log("Wait for it!");
+    }
+  };
+  const handleSubmit = () => {
+    setDisplayed(false);
+  };
   return (
     <>
       {comp &&
         comp.map((item, index) => {
-          console.log(item);
+          // console.log(item);
           if (item.type === "text") {
             return (
               <Text
@@ -50,6 +62,7 @@ function ElectricMeter2() {
                     ? item.style.alignItems
                     : ""
                 }
+                onClick={() => handleClick(item, index)}
               />
             );
           } else if (item.type === "image") {
@@ -82,6 +95,7 @@ function ElectricMeter2() {
                 func={item.function ? item.function : {}}
                 dataType={item.data_type ? item.data_type : ""}
                 value={item.value ? item.value[0] : ""}
+                onClick={() => handleClick(item, index)}
               />
             );
           } else if (item.isConditionComponent) {
@@ -90,9 +104,11 @@ function ElectricMeter2() {
                 zIndex={index}
                 value={item.value}
                 mapItem={item.map_item}
-                key={index}
+                ind={index}
               />
             );
+          } else if (item.type === "scroll_view") {
+            return <ScrollView areas={item.areas} />;
           } else if (item.type === "view") {
             return (
               <View
@@ -111,10 +127,27 @@ function ElectricMeter2() {
                     : ""
                 }px`}
                 zIndex={index}
+                onClick={() => handleClick(item, index)}
               />
             );
           }
         })}
+      {displayed && (
+        <>
+          <textarea
+            className={`textBox ${displayed ? "scaled" : ""}`}
+            onChange={handleChange}
+          >
+            {JSON.stringify(itemWantFix, null, 2)}
+          </textarea>
+          <button
+            className={`btn btn-danger ${displayed ? "scaled" : ""}`}
+            onClick={handleSubmit}
+          >
+            Finish
+          </button>
+        </>
+      )}
     </>
   );
 }

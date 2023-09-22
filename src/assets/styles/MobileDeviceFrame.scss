@@ -6,6 +6,7 @@
   background-color: #000;
   border-radius: 37px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   margin-top: 10% !important;
+  z-index: 0;
 }

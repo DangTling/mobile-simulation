@@ -7,6 +7,9 @@ import valueOfParamMode from "./valueOfParamMode";
 import valueOfParamSwing from "./valueOfParamSwing";
 import valueOfParamFan_speed from "./valueOfParamFan_speed";
 
+import itemWantFix from "./itemWantFix";
+import indexWantFix from "./indexWantFix";
+
 const store = configureStore({
   reducer: {
     comp: compReducer,
@@ -15,6 +18,8 @@ const store = configureStore({
     valueOfParamMode: valueOfParamMode,
     valueOfParamSwing: valueOfParamSwing,
     valueOfParamFan_speed: valueOfParamFan_speed,
+    itemWantFix: itemWantFix,
+    indexWantFix: indexWantFix,
   },
 });
 

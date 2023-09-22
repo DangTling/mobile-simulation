@@ -1,11 +1,26 @@
-import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { setComp } from "../redux/compSlice";
 import { toast } from "react-toastify";
 
 function ReadConfigFiles() {
   const [config, setConfig] = useState(null);
   const dispatch = useDispatch();
+  const itemWantFix = useSelector((state) => state.itemWantFix);
+  const indexWantFix = useSelector((state) => state.indexWantFix);
+
+  useEffect(() => {
+    if (config) {
+      const newArr = config.detail.view.area.map((item, index) => {
+        if (index === indexWantFix) {
+          return itemWantFix;
+        }
+        return item;
+      });
+      config.detail.view.area = newArr;
+      dispatch(setComp(config.detail.view.area));
+    }
+  }, [itemWantFix]);
 
   const handleChange = (e) => {
     const reader = new FileReader();
@@ -32,32 +47,6 @@ function ReadConfigFiles() {
       toast.error(`Lỗi: ${error}`);
     }
   };
-
-  // function safeJsonParse(inputString) {
-  //   let remainingString = inputString;
-
-  //   try {
-  //     let parsedJson = JSON.parse(remainingString);
-  //     return parsedJson;
-  //   } catch (error) {
-  //     if (error instanceof SyntaxError) {
-  //       // Xác định vị trí bắt đầu của object JSON lỗi
-  //       const startIndex = inputString.lastIndexOf("{", error.at - 1);
-  //       const endIndex = inputString.indexOf("}", error.at - 1);
-
-  //       if (startIndex >= 0 && endIndex >= 0) {
-  //         // Xóa bỏ phần object JSON lỗi
-  //         remainingString =
-  //           inputString.substring(0, startIndex) +
-  //           inputString.substring(endIndex + 1);
-  //         return safeJsonParse(remainingString);
-  //       }
-  //     }
-
-  //     // Nếu không còn gì để parse hoặc không tìm thấy object JSON lỗi, trả về giá trị mặc định
-  //     return {};
-  //   }
-  // }
 
   return (
     <div className="col-3 mx-5 my-5">

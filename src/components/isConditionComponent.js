@@ -1,9 +1,31 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { useState } from "react";
 import Image from "./Image";
 import Text from "./Text";
+import { setIndexWantFix } from "../redux/indexWantFix";
+import { setItemWantFix } from "../redux/itemWantFix";
 
 function IsConditionComponent(props) {
   let status = useSelector((state) => state.valueOfOn_Off);
+  const [displayed, setDisplayed] = useState(false);
+  const dispatch = useDispatch();
+  const itemWantFix = useSelector((state) => state.itemWantFix);
+  const handleClick = (item, index) => {
+    setDisplayed(true);
+    dispatch(setItemWantFix(item));
+    dispatch(setIndexWantFix(props.ind));
+  };
+  const handleChange = (e) => {
+    try {
+      const newItem = JSON.parse(e.target.value);
+      dispatch(setItemWantFix(newItem));
+    } catch (error) {
+      console.log("Wait for it!");
+    }
+  };
+  const handleSubmit = () => {
+    setDisplayed(false);
+  };
 
   return (
     <>
@@ -78,6 +100,7 @@ function IsConditionComponent(props) {
                       ? item.item.map_data[item.item.value].uri
                       : ""
                   }
+                  onClick={() => handleClick(item.item, index)}
                 />
               );
             } else if (item.item.type === "text") {
@@ -98,6 +121,7 @@ function IsConditionComponent(props) {
                       : ""
                   }
                   alignItems={item.item.style.alignItems}
+                  onClick={() => handleClick(item.item, index)}
                 />
               );
             }
@@ -151,6 +175,22 @@ function IsConditionComponent(props) {
 
         return null;
       })}
+      {displayed && (
+        <>
+          <textarea
+            className={`textBox ${displayed ? "scaled" : ""}`}
+            onChange={handleChange}
+          >
+            {JSON.stringify(itemWantFix, null, 2)}
+          </textarea>
+          <button
+            className={`btn btn-danger ${displayed ? "scaled" : ""}`}
+            onClick={handleSubmit}
+          >
+            Finish
+          </button>
+        </>
+      )}
     </>
   );
 }

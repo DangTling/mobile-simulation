@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
 import { setValueOfTemp } from "../redux/valueOfTempSlice";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { setValueOfOn_Off } from "../redux/valueOfOn_OffSlice";
 import { setValueOfParamMode } from "../redux/valueOfParamMode";
 import { setValueOfParamSwing } from "../redux/valueOfParamSwing";
@@ -9,6 +9,10 @@ import { setValueOfParamFan_speed } from "../redux/valueOfParamFan_speed";
 
 function Image(props) {
   let [param, setParam] = useState(null);
+
+  const [showDelayed, setShowDelayed] = useState(false);
+
+  const hoverTimeout = useRef(null);
   let paramFan_speed = useSelector((state) => state.valueOfParamFan_speed);
   let paramSwing = useSelector((state) => state.valueOfParamSwing);
   let paramMode = useSelector((state) => state.valueOfParamMode);
@@ -111,8 +115,23 @@ function Image(props) {
     }
   };
 
+  const handleMouseEnter = () => {
+    hoverTimeout.current = setTimeout(() => {
+      setShowDelayed(true);
+    }, [1000]);
+  };
+  const handleMouseLeave = () => {
+    clearTimeout(hoverTimeout.current);
+    setShowDelayed(false);
+  };
+
   return (
-    <StyledImage {...props}>
+    <StyledImage
+      className={`parent-image ${showDelayed ? "hovered" : ""}`}
+      {...props}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       {props.uri !== "" && props.value === "mode" ? (
         <img
           src={
@@ -176,6 +195,14 @@ function Image(props) {
       ) : (
         <span style={{ display: "none" }}></span>
       )}
+      {showDelayed && (
+        <div className="show">
+          <p>Tọa độ x: {props.x} </p>
+          <p>Tọa độ y: {props.y} </p>
+          <p>Chiều cao: {props.height} </p>
+          <p>Chiều rộng: {props.width} </p>
+        </div>
+      )}
     </StyledImage>
   );
 }
@@ -200,5 +227,19 @@ const StyledImage = styled.div`
     width: 100%;
     height: 100%;
     object-fit: ${(props) => props.resizeMode};
+  }
+  .show {
+    position: absolute;
+    top: ${(props) => (props.y <= 75 ? "70%" : "-250%")};
+    left: ${(props) => (props.x <= 25 ? "50%" : "-150%")};
+
+    background-color: white;
+    color: #000000;
+    border: 2px solid rgb(10, 162, 212);
+    padding: 8px;
+    border-radius: 24px;
+    min-width: 150px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    font-weight: 600;
   }
 `;
